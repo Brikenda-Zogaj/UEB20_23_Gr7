@@ -5,7 +5,7 @@ body, html {
        padding: 0;
        font-family: 'Arial', sans-serif;
        color: black;
-       background-color: var(--color-white);
+       background-color: transparent;
    }
    
    /* Navbar */
@@ -99,7 +99,7 @@ body, html {
    }
    
    .nav-links a:hover {
-       text-shadow:var(--color-secondary) ;
+       text-shadow:black ;
        
        color: green;
    }
@@ -134,7 +134,7 @@ body, html {
      }
      
    
-     .fade {
+     /* .fade {
        -webkit-animation-name: fade;
        -webkit-animation-duration: 1.5s;
        animation-name: fade;
@@ -149,7 +149,7 @@ body, html {
      @keyframes fade {
        from {opacity: .4} 
        to {opacity: 1}
-     }
+     } */
    
      
    
@@ -265,7 +265,7 @@ body, html {
      
      .category-card:hover {
        transform: translateY(-5px); 
-       text-shadow:var(--color-secondary) ;
+       /* text-shadow:var(--color-secondary) ; */
        /* background-color: var(--color-secondary); */
        color: green;
      }
@@ -579,8 +579,8 @@ body, html {
    
    /* Sign-Up */
    .s-signup .container {
-       background-color: var(--color-primary);
-       color: var(--color-white);
+       background-color: white;
+       color: white;
        text-align: center;
        padding: 40px 20px;
    }
