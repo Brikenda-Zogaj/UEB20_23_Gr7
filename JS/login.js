@@ -28,3 +28,24 @@ function validateForm() {
 
   return true; 
 }
+
+//validimi i radiobutonave
+
+function validateForm() {
+  var radios = document.getElementsByName('options');
+  var checked = false;
+
+  for (var i = 0; i < radios.length; i++) {
+    if (radios[i].checked) {
+      checked = true;
+      break;
+    }
+  }
+
+  if (!checked) {
+    alert("Please select an option.");
+    return false; 
+  }
+
+  return true; 
+}
