@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <link rel="icon" href="../Assets/logo5.png" >
+
+
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="./assets/css/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="../Css/login.css">
+<title>Login Page</title>
+</head>
+<body>
+  <nav id="navbar" class="navbar">
+    <div class="nav-logo">
+        <img src="../Assets/logo5.png" alt="Logo">
+    </div>
+    <div class="nav-links right">
+        <a href="../Pages/home.html">Home</a>
+        <a href="../Pages/properties.html">Properties</a>
+        <a href="../Pages/blog.html">Blog</a>
+        <a href="../Pages/about.html">About Us</a>
+        <a href="../Pages/contact.html">Contact</a>
+        <a href="../Pages/login.html">
+            <button type="submit">Log In</button>
+        </a>
+    </div>
+</nav>
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h1 class="text-center">Login</h1>
+      <form id="loginForm">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Username" name="username" autocomplete="username" required>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Password" name="password" autocomplete="current-password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="butoni">Login</button>
+      </form>
+      
+      <div class="text-center mt-3">
+        <a href="../Assets/Sample.pdf" target="_blank">Terms and Conditions</a>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<div onclick="toggleVisibility()" style="cursor: pointer;">
+ Tap For Changes
+</div>
+
+<div id="elementToToggle" class="kuti" style="display: none;">
+  <p>Drag image into the rectangle:</p>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<br>
+
+<img id="drag1" src="../Assets/drop.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+<div class="checkbox-container">
+  <u> <p>Favorite Destination :</p></u>
+   <form onsubmit="return validateForm()">
+     <p>Using checkbox</p>
+     <label for="item1">Beach
+       <input type="checkbox" id="item1" name="item1" value="value1">
+       <label for="item1"></label>
+     </label>
+ 
+     <label for="item2">Mountain
+       <input type="checkbox" id="item2" name="item2" value="value2">
+       <label for="item2"></label>
+     </label>
+ 
+     <label for="item3">River
+       <input type="checkbox" id="item3" name="item3" value="value3">
+       <label for="item3"></label>
+     </label>
+     <button type="submit">Submit</button>
+   </form>
+   <br>
+   <form onsubmit="return validateForm()">
+     <p>Using radiobuttons</p>
+     <label for="option1">Bali, Indonesia
+       <input type="radio" id="option1" name="options" value="option1">
+     </label>
+     
+     <label for="option2">Yamanashi, Japan
+       <input type="radio" id="option2" name="options" value="option2">
+     </label>
+     
+     <label for="option3">Nice, France
+       <input type="radio" id="option3" name="options" value="option3">
+     </label>
+     
+     <button type="submit">Submit</button>
+   </form>
+ </div>
+ 
+ 
+   </div>
+ 
+ 
+ 
+   
+   <script src="../Js/login.js"></script>
+ </body>
+ </html>
+
+ 
