@@ -224,7 +224,38 @@
     <script src="../Js/properties.js"></script>
     
         
-    
+    <script>
+
+      document.addEventListener("DOMContentLoaded", function() {
+          var hash = window.location.hash.replace('#', ''); // Remove the hash symbol
+      
+          // Hide all cards initially
+          var cards = document.querySelectorAll('.card');
+          cards.forEach(function(card) {
+              card.style.display = 'none';
+          });
+      
+          if (hash) {
+              // Try to find a card with an id that matches the hash
+              var selectedCard = document.getElementById(hash);
+              if (selectedCard) {
+                  // If found, display only this card
+                  selectedCard.style.display = 'block';
+              } else {
+                  // If no matching card, show a default message or show all cards
+                  // e.g., document.getElementById('defaultMessage').style.display = 'block';
+                  cards.forEach(function(card) {
+                      card.style.display = 'block';
+                  });
+              }
+          } else {
+              // If no hash, show all cards
+              cards.forEach(function(card) {
+                  card.style.display = 'block';
+              });
+          }
+      });
+      </script>
 </body>
 
 
