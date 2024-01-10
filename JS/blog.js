@@ -1,9 +1,10 @@
+
 $(document).ready(function() {
-    $('.read-more-btn').on('click', function() {  //onclick event (Adds event)
+    $('.read-more-btn').on('click', function() {  
         var $readMoreText = $(this).prev('.text').find('.read-more-text');
-        $readMoreText.slideToggle(); ///Hide/Show
-        //callback function
-        $(this).text(function(_, currentText) {   //callback
+        $readMoreText.slideToggle(); 
+        
+        $(this).text(function(_, currentText) {  
             return currentText === 'Read More...' ? 'Read Less' : 'Read More...';
         });
     });
@@ -12,7 +13,7 @@ $(document).ready(function() {
 
 
 
-//audio files(2) dhe select
+
 document.getElementById('audioSelect').addEventListener('change', function() {
     var selectedAudio = this.value;
     var audioPlayer = document.getElementById('audioPlayer');
@@ -20,3 +21,15 @@ document.getElementById('audioSelect').addEventListener('change', function() {
     audioPlayer.load(); // Load the selected audio file (DOM element)
     audioPlayer.play(); // Play the audio (DOM element)
 });
+
+
+
+document.getElementById("ndryshoTekstin").onclick = function() {
+    this.innerHTML = "Teksti është ndryshuar!";
+};
+
+
+
+function ndryshoNgjyren() {
+    document.body.style.backgroundColor = " rgba(187, 187, 193,0.2)";
+}
