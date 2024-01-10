@@ -42,6 +42,21 @@ body{
   }
 }
 
+#loginForm {
+  max-width: 700px; /* Limit form width */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#div1 {
+  width: 400px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+
 
 /* Styles for checkbox container */
 .checkbox-container {
