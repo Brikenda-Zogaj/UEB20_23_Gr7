@@ -65,3 +65,12 @@ function emailIsValid(email){
     let pattern=/\S+@\S+\.\S+/;
     return pattern.test(email);
 }
+
+
+
+function tellTime(){
+  var now=new Date();
+  var h=now.getHours();
+  var m=now.getMinutes();
+  alert("Current time: "+h+":"+m);
+ }
