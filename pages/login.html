@@ -64,13 +64,42 @@
                       <button class="btn btn-lg btn-primary w-100 fs-6">Log In</button>
                   </div>
                   <div class="input-group mb-3">
-                      <button class="btn btn-lg btn-light w-100 fs-6"><img src="../Assets/google.png" style="width:20px" class="me-2"><small>Sign In with Google</small></button>
+                    <button type="button" class="btn btn-lg btn-light w-100 fs-6 google-btn"><img src="../Assets/google.png" style="width:20px" class="me-2"><small>Sign In with Google</small></button>
                   </div>
                   <div class="row">
                       <small>Don't have an account? <a href="signup.html">Sign Up</a></small>
                   </div>
               </div>
           </form>
+      </div>
+  </div>
+</div>
+
+<div id="googleConnectModal" class="google-modal">
+  <div class="google-modal-content">
+      <span class="close-button">&times;</span>
+      <h3>Choose an account to continue</h3>
+      <p>If your account is not listed, you can add it now or sign in with a different account.</p>
+      <div class="google-account-list">
+          
+          <div class="google-account" onclick="selectAccount('user@example.com')">
+              <img src="../Assets/user-icon.png" alt="User" class="google-account-img">
+              <div class="google-account-info">
+                  <p class="google-account-name">Filan Fisteku</p>
+                  <p class="google-account-email">user@example.com</p>
+              </div>
+          </div>
+          <div class="google-account" onclick="selectAccount('user2@example.com')">
+              <img src="../Assets/user-icon.png" alt="User" class="google-account-img">
+              <div class="google-account-info">
+                  <p class="google-account-name">Filane Bademi</p>
+                  <p class="google-account-email">user2@example.com</p>
+              </div>
+          </div>
+          
+      </div>
+      <div class="google-new-account">
+          <button onclick="addAccount()">Use another account</button>
       </div>
   </div>
 </div>

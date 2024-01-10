@@ -5,13 +5,16 @@ class FormHandler {
   }
 
   initializeEvents() {
-      $(document).ready(() => {
-          $('#loginForm').submit((event) => {
-              event.preventDefault(); 
-              this.handleLoginForm();
-          });
-      });
-  }
+    $(document).ready(() => {
+        $('#loginForm').submit((event) => {
+            event.preventDefault(); 
+            this.handleLoginForm();
+        });
+
+        // Initialize modal
+        this.initializeModal();
+    });
+}
 
   handleLoginForm() {
     // Get the value of the username and password inputs
@@ -45,7 +48,33 @@ validateEmail(email) {
 validatePassword(password) {
     return password.length >= 8 && password.charAt(0) === password.charAt(0).toUpperCase();
 }
-  
+
+
+initializeModal() {
+
+  var modal = document.getElementById("googleConnectModal");
+
+  var btn = document.querySelector(".google-btn");
+
+  var span = document.getElementsByClassName("close-button")[0];
+
+  btn.onclick = () => {
+      modal.style.display = "block";
+  }
+
+  span.onclick = () => {
+      modal.style.display = "none";
+  }
+
+  window.onclick = (event) => {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+}
+
+
+
 
 
     manipulateNumbers() {
@@ -88,7 +117,19 @@ validatePassword(password) {
   formHandler.toExponentialNumbers();
   
 
+  function selectAccount(email) {
+    console.log('Selected account:', email);
+    // Proceed with the login process using the selected email
+    // Close the modal after selection
+    document.getElementById("googleConnectModal").style.display = "none";
+}
 
+function addAccount() {
+    console.log('Adding a new account.');
+    // Here you might redirect to an actual Google sign-in page or another flow
+    // Close the modal if you're redirecting
+    document.getElementById("googleConnectModal").style.display = "none";
+}
 
 
   //drag and drop
