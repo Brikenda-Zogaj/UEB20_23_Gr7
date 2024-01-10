@@ -163,3 +163,26 @@ display:none;
     color:#0984e3;
     cursor:pointer;
 }
+table {
+    width: 100%;
+    border-collapse: separate;
+    margin-bottom: 20px;
+    border-spacing: 3px;
+}
+td{
+    padding: 15px;
+    border: 1px solid #ccc;
+    background: radial-gradient(rgb(162, 238, 182), white);
+
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);;
+}
+th {
+    background-color:#ccc;
+    background: linear-gradient(to right, #ccc,white);
+}
+
