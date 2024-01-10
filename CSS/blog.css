@@ -93,3 +93,32 @@
    color: black;
   
   }
+
+  .card {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color:#ffffff;
+    box-shadow: #ccc;
+}
+#ndryshoTekstin{
+    cursor: pointer;
+ 
+}
+
+
+#blog-h1 {
+  outline: 2px solid black;
+  border-radius: 10px;
+}
+
+
+.social-links a {
+  margin: 0 10px;
+}
+
+.social-links img {
+  height: 30px;
+  border-radius: 50px;
+}
