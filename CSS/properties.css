@@ -56,3 +56,26 @@
 .footer-resources h3, .footer-lokacioni h3 {
     margin-bottom: 15px;
 }
+
+.footer-resources ul, .footer-lokacioni ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-resources ul li, .footer-lokacioni ul li {
+    margin-bottom: 10px;
+}
+
+.footer-resources ul li a, .footer-lokacioni ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-resources ul li a:hover, .footer-lokacioni ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-lokacioni p {
+    margin-bottom: 10px;
+}
