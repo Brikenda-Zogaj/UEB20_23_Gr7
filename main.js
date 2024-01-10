@@ -82,5 +82,44 @@ document.addEventListener('DOMContentLoaded', () => {
          
          showTestimonial(currentIndex);
      });
-     
+     document.getElementById('sendButton').addEventListener('click', function(e) {
+      e.preventDefault(); // Prevent the form from submitting for demonstration purposes
+    
+      // Function to create a random emoji
+      function randomEmoji() {
+        const emojis = ['✨',  ];
+        return emojis[Math.floor(Math.random() * emojis.length)];
+      }
+    
+      // Create 20 emoji elements
+      for (let i = 0; i < 10; i++) {
+        const emoji = document.createElement('div');
+        emoji.classList.add('emoji');
+        emoji.textContent = randomEmoji();
+        document.body.appendChild(emoji);
+    
+        // Random position on the page
+        emoji.style.left = Math.random() * window.innerWidth + 'px';
+        emoji.style.top = Math.random() * window.innerHeight + 'px';
+    
+        // Add animation delay
+        emoji.style.transitionDelay = `${0.2 * i}s`;
+    
+        // Trigger the animation
+        setTimeout(() => {
+          emoji.style.opacity = 1;
+        }, 10);
+    
+        // Remove the emoji after the animation
+        setTimeout(() => {
+          emoji.style.opacity = 0;
+          emoji.addEventListener('transitionend', () => {
+            emoji.parentNode.removeChild(emoji);
+          });
+        }, 1000 + 0.2 * i * 1000);
+      }
+    });
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('open');
+  });
           
