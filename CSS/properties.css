@@ -46,3 +46,13 @@
     height: 30px; 
     border-radius: 50px;
 }
+
+.footer-resources, .footer-lokacioni {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.footer-resources h3, .footer-lokacioni h3 {
+    margin-bottom: 15px;
+}
