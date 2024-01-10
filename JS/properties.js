@@ -56,3 +56,25 @@ document.addEventListener('DOMContentLoaded', function() {
             }
           });
 });
+
+
+
+function validate() {
+  const searchTerm = searchInput.value.trim();
+
+  if (searchTerm === '') {
+    const errorMessage = document.createElement('p');
+    errorMessage.textContent = 'You need to enter a search term to proceed';
+    errorMessage.classList.add('error-message');
+
+    const formGroup = searchInput.parentElement;
+    formGroup.appendChild(errorMessage);
+
+    setTimeout(function() {
+      errorMessage.remove();
+    }, 3000); 
+  } else {
+    console.log('Kërkesa juaj është: ', searchTerm);
+    
+  }
+}
