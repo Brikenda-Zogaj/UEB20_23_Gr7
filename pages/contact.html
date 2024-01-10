@@ -27,28 +27,33 @@
   
 </head>
 <body onload="displayCurrentDate()">
-  <button type="button" onclick="tellTime()">Get Time</button>
 
     <nav id="navbar" class="navbar">
         <div class="nav-logo">
-            <img src="../Assets/logo5.png" alt="Logo" >
+
+            <img src="../Assets/logo55.png" alt="Logo" >
+
         </div>
         <div class="nav-links right">
-            <a href="#home">Home</a>
-            <a  href="#properties">Properties</a>
-            <a href="#blog">Blog</a>
-            <a href="#about">About Us</a>
-            <a href="./pages/contact.html">Contact</a>
-        </div>
+          <a href="../Pages/home.html">Home</a>
+          <a href="../Pages/properties.html">Properties</a>
+          <a href="../Pages/blog.html">Blog</a>
+          <a href="../Pages/about.html">About Us</a>
+          <a href="../Pages/contact.html">Contact</a>
+          <a href="../Pages/login.html">
+                 <button type="submit">Log In</button>
+             </a>
+       </div>
     </nav>
 
 
   <div class="container">
     <p id="currentDate">Current Date:</p>
+    <button type="button" onclick="tellTime()">Get Time</button>
 <div class="row py-5 g-3">
 <div class="col-md-6 first_col">
   <h1 class="text-center mt-3">Contact Us</h1>
-<form clas="p-4 mt-5" onsubmit="event.preventDefault(); validateForm()">
+<form clas="p-4 mt-5" id="formId" onsubmit="event.preventDefault(); validateForm()">
   <div class="mb-3">
     <label for="name" class="form-label" >Enter your name</label>
     <input type="text" class="form-control" id="name" placeholder="Your Name" >

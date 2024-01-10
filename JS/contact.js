@@ -1,3 +1,9 @@
+window.onload = window.onload = function() {
+  setTimeout(function() {
+      alert("Welcome to Metropol RealEstate! We're here to help you find your dream home. If you have any questions or need assistance, please don't hesitate to reach out through this contact form. Our team is eager to assist you!");
+  }, 2000); 
+};
+
 //Get Data
 const nameInput=document.querySelector("#name");
 const email=document.querySelector("#email");
@@ -5,9 +11,11 @@ const nmessage=document.querySelector("#message");
 const success=document.querySelector("#success");
 const errorNodes=document.querySelectorAll(".error");
 
+document.getElementById('formId').addEventListener('submit', validateForm);
 // Validate data
-function validateForm() {
+function validateForm(event) {
     try {
+      event.preventDefault();
       clearMessage();
   
       let errorFlag = false;
