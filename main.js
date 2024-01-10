@@ -32,18 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
      
       
      
-       // Go Button
-       document.querySelectorAll('.go-button').forEach(function(button) {
-         button.addEventListener('click', function() {
-           const propertySearch = document.querySelector('input[placeholder="Search Property"]').value;
-           const locationSearch = document.querySelector('input[placeholder="Location"]').value;
-           const propertyType = document.querySelector('select[aria-label="Select Property Type"]').value;
-           console.log('Property Search:', propertySearch);
-           console.log('Location Search:', locationSearch);
-           console.log('Property Type:', propertyType);
-           
-         });
-       });
+      
      
        // Highlight Card
        document.querySelectorAll('.category-card').forEach(function(card) {
