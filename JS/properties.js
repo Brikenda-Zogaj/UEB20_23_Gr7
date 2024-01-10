@@ -87,3 +87,26 @@ searchForm.addEventListener('submit', function(event) {
 
   validate(); // Thirrja e funksionit të validimit
 });
+
+
+$(document).ready(function(){
+  $("#toggleButton").click(function(){
+    var $hiddenCards = $(".hidden");
+    if ($hiddenCards.is(":hidden")) {
+      $hiddenCards.slideDown(); // shfaqi hidden cards
+      $(this).text('Hide');
+    } else {
+      $hiddenCards.slideUp(); // mshefi shown cards
+      $(this).text('Show more');
+    }
+    
+  });
+
+  
+  $(".view-details").click(function(event){
+    event.preventDefault(); 
+    var targetID = $(this).attr('id').replace("p", "pp"); 
+    $("#" + targetID).slideToggle(); 
+    
+  });
+});
