@@ -13,11 +13,12 @@
 
 <body>
     <!-- Navigation Bar -->
-    <nav id="navbar" class="navbar">
+    <nav id="navbar" class="navbar">z
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
         <div class="nav-logo">
             <img src="./Assets/logo5.png" alt="Logo" >
         </div>
-        <div class="nav-links right">
+        <div class="nav-links right" id="navLinks">
             <a href="./pages/home.html">Home</a>
             <a  href="./pages/properties.html">Properties</a>
             <a href="./pages/blog.html">Blog</a>
@@ -313,8 +314,9 @@
                 <input  placeholder="Write something good for us">
                 <a href="./Pages/home.html">
                 <button id="sendButton" type="submit">Send us</button>
+            </a>
             </form>
-        </a>
+       
         </div>
     </section>
 
@@ -466,6 +468,16 @@
                 });
             });
                 </script>
+                 <script>
+                    function toggleMenu() {
+                        var navLinks = document.getElementById("navLinks");
+                        if (navLinks.style.display === "block") {
+                            navLinks.style.display = "none";
+                        } else {
+                            navLinks.style.display = "block";
+                        }
+                    }
+                    </script>
 
     <script src="main.js"></script>
 </body>
