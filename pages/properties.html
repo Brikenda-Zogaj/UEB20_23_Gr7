@@ -3,9 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Properties</title>
+    <title>Metropol Properties</title>
+    <link rel="shortcut icon" href="../Assets/logo5.png"  />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../Css/properties.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
 </head>
 <body>
+    <nav id="navbar" class="navbar">
+        <div class="nav-logo">
+            <img src="../Assets/logo5.png" alt="Logo">
+        </div>
+        <div class="nav-links right">
+            <a href="../Pages/home.html">Home</a>
+            <a href="../Pages/properties.html">Properties</a>
+            <a href="../Pages/blog.html">Blog</a>
+            <a href="../Pages/about.html">About Us</a>
+            <a href="../Pages/contact.html">Contact</a>
+            <a href="../Pages/login.html">
+                <button type="submit">Log In</button>
+            </a>
+        </div>
+    </nav>
+    <!-- Main Content -->
+<div class="container mt-4">
+    <h1>Welcome to Luxury Properties</h1>
+    <div class="col-md-6">
+          <!-- Search Form -->
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchInput" >
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchButton">Search</button>
+          </form>
+        </div>
+        <br>
+        
+    <div class="row">
+      <!-- Property Cards -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card" id="RioDeJaneiro">
+          <!-- Card content here -->
+          <img src="../Assets/download.jpeg" class="card-img-top" alt="Property 1">
+          <div class="card-body">
+            <h5 class="card-title" id="P1" >Property 1</h5>
+            <p class="card-text"><i>Luxury villa with ocean view</i></p>
+            
+            <p class="card-text"><b>Location:</b>Rio De Janeiro</p>
+            <p class="card-text"><b>Price:</b><mark style="color: mediumseagreen;">$2.340.000</mark></p>
+            <div class="additional-info mt-3" style="display: none;" id="pp1">
+              <p>
+                <b>4</b> Beds<br>
+                <b>3</b> Baths<br>
+                Living Room
+                <br>
+                <b>1</b> Car Garage
+                <br>
+                10 min walk to Ocean
+                <br>
+                Entering your new home, you’ll step onto your very private porch<br>
+                 surrounded by redwoods for some relaxation when you arrive home from work or play. You’ll then open your door to the first floor, <br>
+                 where you will enjoy a spacious living room with high ceilings, a fireplace for cold winter nights, dual pane windows & nice roll-up window shutters, a <br>
+                cozy dining room with pass thru to a perfect size kitchen with lots of cabinets.”
+              </p>
+              
+            </div>
+            <a href="#" class="btn btn-success view-details" id="p1"><abbr title="More details" >View Details</abbr></a>
+  
+          </div>
+        </div>
+      </div>
+      <!-- Repeat similar structure for more property cards -->
+      <div class="col-lg-4 col-md-6 mb-4">
+         <div class="card" id="London">
+            <!-- Card content here -->
+            <img src="../Assets/foto2.jpeg" class="card-img-top" alt="Property 2" height="200">
+            <div class="card-body">
+                <h5 class="card-title">Property 2</h5>
+                <p class="card-text"><i>Forest Hill Villa</i></p>
+                <p class="card-text"><b>Location:</b> London</p>
+              <p class="card-text"><b>Price:</b><mark style="color: mediumseagreen;">$1.023.000</mark>
+              </p>
+              <div class="additional-info mt-3" style="display: none;" id="pp2">
+                <p>
+                  <b>5</b> Beds<br>
+                  <b>4.5</b> Baths<br>
+                  <br>
+                  <b>Large pool</b>—Summer spot perfect for throwing pool parties<br>
+                  Welcome to this adorable home in London.The large Screened in front porch is great for morning coffe.<br>
+                  The kitchen includes a newer gas stainless steel stove,stainless steel counter top&a pantry.<br>
+                  The bathroom is large with glass silding doors.You don't want to miss this diamond in the rough that has been <br>
+                  lovingly maintained by the owner since 1998!
+  
+  
+  
+  
+                </p>
+              </div>
+              <a href="#" class="btn btn-success view-details"id="p2"><abbr title="More details" >View Details</abbr></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card" id="Tokyo">
+              <!-- Card content here -->
+              <img src="../Assets/foto3.jpg" class="card-img-top" alt="Property 3" height="200">
+              <div class="card-body">
+                <h5 class="card-title">Property 3</h5>
+                <p class="card-text"><i>Small Luxury House</i></p>
+                
+                <p class="card-text"><b>Location:</b>Tokyo</p>
+                <p class="card-text"><b>Price:</b><mark style="color: mediumseagreen;"> $980.000</mark></p>
+                <div class="additional-info mt-3" style="display: none;" id="pp3">
+                  <p>
+                    <b>4</b> Beds<br>
+                    <b>3</b> Baths<br>
+                    Living Room
+                    <br>
+                    <b>1</b> Car Garage
+                    <br>
+                    This well maintained proerty features an open floor plan<br>
+                    ,4 bedrooms,3 full baths,and a spacious landscaped backyard that is perfect for entertainind and <br>
+                    includes fire pit and covered dining area.The home has remodeled in 2016.
+                
+                  </p>
+                </div>
+                <a href="#" class="btn btn-success view-details"id="p3"><abbr title="More details">View Details</abbr></a>
+              </div>
+            </div>
+            
+      </div>
+      </div>
+      <div class="row hidden" style="display: none;">
+        <!-- Property Cards -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card" id="NewYork" >
+            <!-- Card content here -->
+            <img src="../Assets/foto4.jpg" class="card-img-top" alt="Property 4" height="200">
+            <div class="card-body">
+                 
+              <h5 class="card-title" id="P1" >Property 4</h5>
+           
+              <p class="card-text"><i>Forest Hill Villa</i></p>
+              
+              <p class="card-text"><b>Location:</b>New York</p>
+              <p class="card-text"><b>Price:</b><mark style="color: mediumseagreen;">$1.903.000</mark></p>
+              <div class="additional-info mt-3" style="display: none;" id="pp4">
+                <p>
+                  <b>4</b> Beds<br>
+                  <b>4.5</b> Baths<br>
+                  Living Room
+                  <br>
+                  Wine room—Wine collector’s paradise
+                  <br>
+                 This can be your best choice.Enter this open concept to find the kitchen at the <br>
+                 the heart of the home,flanked by dining and family with a cozy fireplace.A functional mudroom and powder<br>
+                 room rounds out this level.On the upper two levels,you'll find 4 Beds and 4.5 baths.<i>Right size,right price</i>
+                </p>
+              </div>
+              <a href="#" class="btn btn-success view-details" id="p4"><abbr title="More details">View Details</abbr></a>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat similar structure for more property cards -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card" id="Hollywood">
+              <!-- Card content here -->
+              <img src="../Assets/foto5.jpeg" class="card-img-top" alt="Property 5" height="200">
+              <div class="card-body">
+                <h5 class="card-title">Property 5</h5>
+                <p class="card-text"><i>Best penthouse with city view</i></p>
+                
+                <p class="card-text"><b>Location:</b>Hollywood</p>
+                <p class="card-text"><b>Price:</b><mark style="color: mediumseagreen;">$650.000</mark></p>
+                <div class="additional-info mt-3" style="display: none;" id="pp5">
+                  <p>
+                    Live like a celebrity in this stunning Hollywood Hills 
+                    . With a private pool, plenty of natural light, and custom finishes throughout, you’ll feel like you’re living in a movie set.
+                  </p>
+                </div>
+                <a href="#" class="btn btn-success view-details" id="p5"><abbr title="More details">View Details</abbr></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card"- id="Marbella">
+              <!-- Card content here -->
+              <img src="../Assets/foto6.jpeg" class="card-img-top" alt="Property 1" height="200">
+              <div class="card-body">
+                <h5 class="card-title">Property 6</h5>
+                <p class="card-text"><i>Luxury  vacation home</i></p>
+                
+                <p class="card-text"><b>Location:</b>Marbella</p>
+                <p class="card-text"><b>Price:</b><mark style="color: mediumseagreen;">$890.000</mark></p>
+                <div class="additional-info mt-3" style="display: none;" id="pp6">
+                  <p>
+                    <b>4</b> <br>
+                    <b>2</b> Baths<br>
+                    Li
+                    <br>
+                    <b>1</b> Car Garage
+                    <br>
+                    Beautiful holiday house in Marbella, Spain, 180m2 with <br>
+                    four bedrooms – two double, one twin and one single. Large and bright living room with sofa bed<br>
+                     with access to terrace, fully equipped kitchen, two bathrooms and garage.
+                  </p>
+                </div>
+                <a href="#" class="btn btn-success view-details" id="p6"><abbr title="More details">View Details</abbr></a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <button id="toggleButton" class="btn btn-success ">Show more</button>
+    </div>
+    
+    
+    <!-- Bootstrap and JavaScript Bundle -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Include your custom JavaScript file -->
+    <script src="../Js/properties.js"></script>
+    
+        
+
+
+
+
+    
     
 </body>
 </html>
