@@ -4,36 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../Assets/logo5.png"  />
-    <link rel="icon" href="../Assets/logo55.png" type="image/x-icon">
-    <title>Metropol Real Estate</title>
-  
+    <link rel="shortcut icon" href="./Assets/logo55.png">
+    <title>Welcome to Metropol Estate</title>
     <link rel="stylesheet" href="../CSS/home.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   
-
-
     
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <nav id="navbar" class="navbar">
+    <nav id="navbar" class="navbar">z
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
         <div class="nav-logo">
-            <img src="../Assets/logo5.png" alt="Logo">
+            <img src="../Assets/logo5.png" alt="Logo" >
         </div>
-        <div class="nav-links right">
-            <a href="../Pages/home.html">Home</a>
-            <a href="../Pages/properties.html">Properties</a>
-            <a href="../Pages/blog.html">Blog</a>
-            <a href="../Pages/about.html">About Us</a>
-            <a href="../Pages/contact.html">Contact</a>
+        <div class="nav-links right" id="navLinks">
+            <a href="../pages/home.html">Home</a>
+            <a  href="../pages/properties.html">Properties</a>
+            <a href="../pages/blog.html">Blog</a>
+            <a href="../pages/about.html">About Us</a>
+            <a href="../pages/contact.html">Contact</a>
             <a href="../Pages/login.html">
-                <button type="submit">Log In</button>
+                <button type="button" class="btn btn-primary">Log In</button>
             </a>
         </div>
     </nav>
-    
 
     <!-- Slideshow -->
     <div class="slideshow">
@@ -65,102 +60,93 @@
             <h2 class="h2" style="color: black;"><i>Discover Your Dream Home</i></h2>
             <p>Explore top-rated properties across the globe.</p>
             <br>
-         
-                        
-      
-                        
+            <div class="search-container">
+                <div class="search-section">
+                    <form action="../pages/properties.html" method="get" id="searchForm">
+                        <input type="text" id="searchInput" list="locationList" placeholder="Location">
+                        <datalist id="locationList">
+                            <option value="Rio De Janeiro">
+                            <option value="Tokyo">
+                            <option value="London">
                            
-                        
-                        <br>
-                    
-<div class="search-container">
-    <div class="search-section">
-        <form action="../Pages/properties.html" method="get" id="searchForm">
-            <input type="text" id="searchInput" list="locationList" placeholder="Location">
-            <datalist id="locationList">
-                <option value="Rio De Janeiro">
-                <option value="Tokyo">
-                <option value="London">
+                        </datalist>
+                        <output name="result" for="searchInput"></output>
+                    </form>
+                    <button class="location-button" type="button" onclick="redirectToProperty()">Search</button>
+                </div>
+            </div>
+        </header>
                
-            </datalist>
-            <output name="result" for="searchInput"></output>
-        </form>
-        <button class="location-button" type="button" onclick="redirectToProperty()">Search</button>
-    </div>
-</div>
-
-
-    </header>
 
 
     <!-- Categories Container -->
     <div class="categories-container">
-        <div class="category-card" onclick="toggleText('t-villa')">
-            <div class="villa-container">
-                <svg fill="#39a283" height="80px" width="80px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460 460" xml:space="preserve" stroke="#39a283">
+       <div class="category-card" onclick="toggleText('t-villa')">
+        <div class="villa-container">
+            <svg fill="#39a283" height="80px" width="80px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460 460" xml:space="preserve" stroke="#39a283">
+
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                
+                <g id="SVGRepo_iconCarrier"> <g> <path d="M454,117.5H258.68v-32c0-3.314-2.687-6-6-6H6c-3.313,0-6,2.686-6,
+                    6v151c0,3.314,2.687,6,6,6h28.292v132 c0,3.314,2.687,6,6,6h117.254h180.306h28.761c3.313,0,6-2.686,6-6v-137H454c3.313,0,6-2.686,
+                    6-6v-108 C460,120.186,457.314,117.5,454,117.5z M34.292,198.5v32H12v-139h234.68v26h-24.976c-3.313,0-6,2.686-6,6v69H40.292 C36.978,192.5,34.292,195.186,34.292,198.5z M292.03,259.5v109H259.34v-109H292.03z M247.34,368.5h-32.689v-109h32.689V368.5z M202.651,368.5h-32.689v-109h32.689V368.5z M157.962,319.5h-32.689v-60h32.689V319.5z M113.272,319.5H80.583v-60h32.689V319.5z M68.583,319.5H46.292v-60h22.292V319.5z M46.292,368.5v-37h111.67v37h-0.416H46.292z M304.03,368.5v-109h27.822v109H304.03z M360.613,368.5h-16.761v-115c0-3.313-2.687-6-6-6H46.292v-43h169.413v27c0,3.314,2.687,6,6,6h138.909V368.5z M227.704,225.5v-96 H448v10H246.04c-3.313,0-6,2.687-6,6v64c0,3.313,2.687,6,6,6H448v10H227.704z M252.04,203.5v-52h37.778v52H252.04z M301.818,151.5 h44.414v52h-44.414V151.5z M358.232,151.5h44.415v52h-44.415V151.5z M414.647,151.5H448v52h-33.354V151.5z"/> <path d="M206,177.5v-70c0-3.313-2.687-6-6-6H26.889c-3.313,0-6,2.687-6,6v70c0,3.313,2.687,6,6,6H200 C203.313,183.5,206,180.814,206,177.5z M137.22,113.5v58H89.67v-58H137.22z M32.889,113.5H77.67v58H32.889V113.5z M194,171.5 h-44.78v-58H194V171.5z"/> </g> </g>
+                
+                </svg>
+              <h3> Villas</h3>
+            </div>
+            <div id="t-villa" class="t" style="display: none;">
+                <p>
+                    Villas are a popular choice in the real estate market, especially for those seeking luxury, comfort, and privacy. A villa typically refers to a standalone, upscale residential structure, often characterized by spacious layouts, elegant designs, and high-end amenities</p>
+            </div>
+        </div>
+          
+        <div class="category-card" onclick="toggleText('t-house')">
+            <div class="house-container">
+                <svg fill="black" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 496 496" xml:space="preserve" width="79px" height="79px" stroke="#4ba744">
 
                     <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                     
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
                     
-                    <g id="SVGRepo_iconCarrier"> <g> <path d="M454,117.5H258.68v-32c0-3.314-2.687-6-6-6H6c-3.313,0-6,2.686-6,
-                        6v151c0,3.314,2.687,6,6,6h28.292v132 c0,3.314,2.687,6,6,6h117.254h180.306h28.761c3.313,0,6-2.686,6-6v-137H454c3.313,0,6-2.686,
-                        6-6v-108 C460,120.186,457.314,117.5,454,117.5z M34.292,198.5v32H12v-139h234.68v26h-24.976c-3.313,0-6,2.686-6,6v69H40.292 C36.978,192.5,34.292,195.186,34.292,198.5z M292.03,259.5v109H259.34v-109H292.03z M247.34,368.5h-32.689v-109h32.689V368.5z M202.651,368.5h-32.689v-109h32.689V368.5z M157.962,319.5h-32.689v-60h32.689V319.5z M113.272,319.5H80.583v-60h32.689V319.5z M68.583,319.5H46.292v-60h22.292V319.5z M46.292,368.5v-37h111.67v37h-0.416H46.292z M304.03,368.5v-109h27.822v109H304.03z M360.613,368.5h-16.761v-115c0-3.313-2.687-6-6-6H46.292v-43h169.413v27c0,3.314,2.687,6,6,6h138.909V368.5z M227.704,225.5v-96 H448v10H246.04c-3.313,0-6,2.687-6,6v64c0,3.313,2.687,6,6,6H448v10H227.704z M252.04,203.5v-52h37.778v52H252.04z M301.818,151.5 h44.414v52h-44.414V151.5z M358.232,151.5h44.415v52h-44.415V151.5z M414.647,151.5H448v52h-33.354V151.5z"/> <path d="M206,177.5v-70c0-3.313-2.687-6-6-6H26.889c-3.313,0-6,2.687-6,6v70c0,3.313,2.687,6,6,6H200 C203.313,183.5,206,180.814,206,177.5z M137.22,113.5v58H89.67v-58H137.22z M32.889,113.5H77.67v58H32.889V113.5z M194,171.5 h-44.78v-58H194V171.5z"/> </g> </g>
+                    <g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M432,264h33.584l-156.44,128H304v-96h32v-28.944l-160-80v-52.528c9.288-3.312,16-12.112,16-22.528 c0-2.28-0.424-4.448-1.024-6.544l64.408-32.208C259.704,77.408,265.544,80,272,80c4.72,0,9.096-1.416,12.816-3.784l60.496,36.296 C344.528,114.888,344,117.368,344,120c0,13.232,10.768,24,24,24s24-10.768,24-24c0-3.496-0.792-6.792-2.136-9.792l71.368-64.88 C464.488,46.984,468.112,48,472,48c13.232,0,24-10.768,24-24S485.232,0,472,0s-24,10.768-24,24c0,3.496,0.792,6.792,2.136,9.784 l-71.368,64.88C375.512,97.016,371.888,96,368,96c-4.72,0-9.096,1.416-12.816,3.784l-60.496-36.296 C295.472,61.112,296,58.632,296,56c0-13.232-10.768-24-24-24s-24,10.768-24,24c0,1,0.176,1.944,0.296,2.904L181.6,92.256 C177.728,89.584,173.048,88,168,88c-13.232,0-24,10.768-24,24c0,10.416,6.704,19.216,16,22.528v52.528l-160,80V296h32v184H0v16 h48V280H16v-3.056l144-72v19.776c-22.664,3.824-40,23.536-40,47.28c0,26.472,21.528,48,48,48s48-21.528,48-48 c0-23.736-17.336-43.448-40-47.28v-19.776l144,72V280h-32v128h26.856L480,272.88V304h16v-56h-64V264z M472,16 c4.416,0,8,3.584,8,8s-3.584,8-8,8c-4.416,0-8-3.584-8-8S467.584,16,472,16z M368,112c4.416,0,8,3.584,8,8s-3.584,8-8,8 c-4.416,0-8-3.584-8-8S363.584,112,368,112z M272,48c4.416,0,8,3.584,8,8s-3.584,8-8,8c-4.416,0-8-3.584-8-8S267.584,48,272,48z M168,264c4.416,0,8,3.584,8,8c0,4.416-3.584,8-8,8s-8-3.584-8-8C160,267.584,163.584,264,168,264z M200,272 c0,17.648-14.352,32-32,32s-32-14.352-32-32c0-14.872,10.232-27.288,24-30.864v8.336c-9.296,3.312-16,12.112-16,22.528 c0,13.232,10.768,24,24,24s24-10.768,24-24c0-10.416-6.712-19.216-16-22.528v-8.336C189.76,244.712,200,257.128,200,272z M168,120c-4.416,0-8-3.584-8-8s3.584-8,8-8s8,3.584,8,8S172.416,120,168,120z"/> <path d="M112,496h112V336H112V496z M128,352h80v128h-80V352z"/> <rect x="176" y="408" width="16" height="16"/> <rect x="464" y="480" width="16" height="16"/> <rect x="464" y="320" width="16" height="144"/> <rect x="432" y="464" width="16" height="16"/> <rect x="432" y="336" width="16" height="112"/> <rect x="400" y="480" width="16" height="16"/> <rect x="400" y="368" width="16" height="96"/> </g> </g> </g> </g>
                     
                     </svg>
-                  <h3> Villas</h3>
-                </div>
-                <div id="t-villa" class="t" style="display: none;">
-                    <p>
-                        Villas are a popular choice in the real estate market, especially for those seeking luxury, comfort, and privacy. A villa typically refers to a standalone, upscale residential structure, often characterized by spacious layouts, elegant designs, and high-end amenities</p>
-                </div>
-            </div>
-            <div class="category-card" onclick="toggleText('t-house')">
-                <div class="house-container">
-                    <svg fill="black" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 496 496" xml:space="preserve" width="79px" height="79px" stroke="#4ba744">
-  
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                        
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                        
-                        <g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M432,264h33.584l-156.44,128H304v-96h32v-28.944l-160-80v-52.528c9.288-3.312,16-12.112,16-22.528 c0-2.28-0.424-4.448-1.024-6.544l64.408-32.208C259.704,77.408,265.544,80,272,80c4.72,0,9.096-1.416,12.816-3.784l60.496,36.296 C344.528,114.888,344,117.368,344,120c0,13.232,10.768,24,24,24s24-10.768,24-24c0-3.496-0.792-6.792-2.136-9.792l71.368-64.88 C464.488,46.984,468.112,48,472,48c13.232,0,24-10.768,24-24S485.232,0,472,0s-24,10.768-24,24c0,3.496,0.792,6.792,2.136,9.784 l-71.368,64.88C375.512,97.016,371.888,96,368,96c-4.72,0-9.096,1.416-12.816,3.784l-60.496-36.296 C295.472,61.112,296,58.632,296,56c0-13.232-10.768-24-24-24s-24,10.768-24,24c0,1,0.176,1.944,0.296,2.904L181.6,92.256 C177.728,89.584,173.048,88,168,88c-13.232,0-24,10.768-24,24c0,10.416,6.704,19.216,16,22.528v52.528l-160,80V296h32v184H0v16 h48V280H16v-3.056l144-72v19.776c-22.664,3.824-40,23.536-40,47.28c0,26.472,21.528,48,48,48s48-21.528,48-48 c0-23.736-17.336-43.448-40-47.28v-19.776l144,72V280h-32v128h26.856L480,272.88V304h16v-56h-64V264z M472,16 c4.416,0,8,3.584,8,8s-3.584,8-8,8c-4.416,0-8-3.584-8-8S467.584,16,472,16z M368,112c4.416,0,8,3.584,8,8s-3.584,8-8,8 c-4.416,0-8-3.584-8-8S363.584,112,368,112z M272,48c4.416,0,8,3.584,8,8s-3.584,8-8,8c-4.416,0-8-3.584-8-8S267.584,48,272,48z M168,264c4.416,0,8,3.584,8,8c0,4.416-3.584,8-8,8s-8-3.584-8-8C160,267.584,163.584,264,168,264z M200,272 c0,17.648-14.352,32-32,32s-32-14.352-32-32c0-14.872,10.232-27.288,24-30.864v8.336c-9.296,3.312-16,12.112-16,22.528 c0,13.232,10.768,24,24,24s24-10.768,24-24c0-10.416-6.712-19.216-16-22.528v-8.336C189.76,244.712,200,257.128,200,272z M168,120c-4.416,0-8-3.584-8-8s3.584-8,8-8s8,3.584,8,8S172.416,120,168,120z"/> <path d="M112,496h112V336H112V496z M128,352h80v128h-80V352z"/> <rect x="176" y="408" width="16" height="16"/> <rect x="464" y="480" width="16" height="16"/> <rect x="464" y="320" width="16" height="144"/> <rect x="432" y="464" width="16" height="16"/> <rect x="432" y="336" width="16" height="112"/> <rect x="400" y="480" width="16" height="16"/> <rect x="400" y="368" width="16" height="96"/> </g> </g> </g> </g>
-                        
-                        </svg>
-                  <h3>House</h3>
-      </div>
-      <div id="t-house" class="t" style="display: none;">
-          <p>Houses are a fundamental aspect of the real estate market and cater to a wide range of preferences and needs. A house typically refers to a single-family dwelling, providing living space separate from other residences.</p>
-      </div>
+              <h3>House</h3>
   </div>
+  <div id="t-house" class="t" style="display: none;">
+      <p>Houses are a fundamental aspect of the real estate market and cater to a wide range of preferences and needs. A house typically refers to a single-family dwelling, providing living space separate from other residences.</p>
+  </div>
+</div>
           
-            <div class="category-card" onclick="toggleText('t-penthouse')">
-                <div class="penthouse-container">
-              <svg fill="pink" width="80px" height="80px" viewBox="0 0 100 100" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#af4b4b">
-  
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                  
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                  
-                  <g id="SVGRepo_iconCarrier"> <g id="jackhammer"/> <g id="drilling_machine"/> <g id="hammer"/> <g id="measuring_tape"/> <g id="wrench"/> <g id="saw"/> <g id="building"/> <g id="wall"/> <g id="crane"/> <g id="barrier_sign"/> <g id="concept"/> <g id="shovel"/> <g id="architecture"/> <g id="safety_helmet"/> <g id="worker"/> <g id="teamwork"/> <g id="roller_brush"/> <g id="designs"> <g> <path d="M59,28h6c0.6,0,1-0.4,1-1v-6c0-0.6-0.4-1-1-1h-6c-0.6,0-1,0.4-1,1v6C58,27.6,58.4,28,59,28z M60,22h4v4h-4V22z"/> <path d="M69,28h6c0.6,0,1-0.4,1-1v-6c0-0.6-0.4-1-1-1h-6c-0.6,0-1,0.4-1,1v6C68,27.6,68.4,28,69,28z M70,22h4v4h-4V22z"/> <path d="M59,38h6c0.6,0,1-0.4,1-1v-6c0-0.6-0.4-1-1-1h-6c-0.6,0-1,0.4-1,1v6C58,37.6,58.4,38,59,38z M60,32h4v4h-4V32z"/> <path d="M69,38h6c0.6,0,1-0.4,1-1v-6c0-0.6-0.4-1-1-1h-6c-0.6,0-1,0.4-1,1v6C68,37.6,68.4,38,69,38z M70,32h4v4h-4V32z"/> <path d="M51,33h-6c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1v-6C52,33.4,51.6,33,51,33z M50,39h-4v-4h4V39z"/> <path d="M51,43h-6c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1v-6C52,43.4,51.6,43,51,43z M50,49h-4v-4h4V49z"/> <path d="M83,41h6c0.6,0,1-0.4,1-1v-6c0-0.6-0.4-1-1-1h-6c-0.6,0-1,0.4-1,1v6C82,40.6,82.4,41,83,41z M84,35h4v4h-4V35z"/> <path d="M83,51h6c0.6,0,1-0.4,1-1v-6c0-0.6-0.4-1-1-1h-6c-0.6,0-1,0.4-1,1v6C82,50.6,82.4,51,83,51z M84,45h4v4h-4V45z"/> <path d="M95,30c0.6,0,1-0.4,1-1v-4c0-0.6-0.4-1-1-1h-1.4l-2.2-4.4c-0.2-0.3-0.5-0.6-0.9-0.6H80v-1h1c0.6,0,1-0.4,1-1v-4 c0-0.6-0.4-1-1-1h-0.7L67.5,4.1c-0.3-0.2-0.7-0.2-1,0L53.7,12H53c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1h1v1H43.4 c-0.4,0-0.7,0.2-0.9,0.6L40.4,24H39c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1h1v26h-1c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1h56 c0.6,0,1-0.4,1-1v-4c0-0.6-0.4-1-1-1h-1V30H95z M94,28h-1H80v-2h14V28z M89.9,21l1.5,3H80v-3H89.9z M80,16h-1H55h-1v-2h26V16z M67,6.2l9.5,5.8H57.5L67,6.2z M78,18v7v4v27h-5V43c0-0.6-0.4-1-1-1H62c-0.6,0-1,0.4-1,1v13h-5V29v-4v-7H78z M71,56h-8V44h8V56z M44.1,21H54v3H42.6L44.1,21z M40,26h14v2H41h-1V26z M42,30h12v26H42V30z M94,60H40v-2h1h14h7h10h7h14h1V60z M92,56H80V30h12V56z"/> <path d="M90.6,69c-1.5-2.4-4.3-3.7-7.1-3.1l-33.4,7c-0.3-0.3-0.7-0.6-1-0.9l-13.1-9c-1.1-0.7-2.4-1-3.7-0.8L18,64.8V63 c0-0.6-0.4-1-1-1H5c-0.6,0-1,0.4-1,1v32c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1v-1.8l20.5,2.7c0.2,0,0.4,0,0.6,0c0.5,0,1-0.1,1.5-0.2 l51.5-16.3c2.7-0.9,4.3-3.7,3.6-6.4C95.2,70.6,93,69,90.6,69z M83.8,67.9c1.7-0.3,3.3,0.2,4.5,1.4l-36.7,6.6 c-0.1-0.4-0.2-0.8-0.4-1.1L83.8,67.9z M16,94H6V64h10V94z M91.6,77.5L40.1,93.8c-0.4,0.1-0.9,0.2-1.3,0.1L18,91.2V66.8l14.6-2.6 c0.8-0.1,1.6,0,2.2,0.5l13.1,9c1,0.7,1.6,1.7,1.8,2.8s-0.1,2.3-0.8,3.3c-1.3,1.7-3.5,2.2-5.4,1.2l-13-6.9 c-0.5-0.3-1.1-0.1-1.4,0.4c-0.3,0.5-0.1,1.1,0.4,1.4l13,6.9c0.9,0.5,1.9,0.7,2.9,0.7c1.9,0,3.8-0.9,5-2.5c0.7-0.9,1.1-2,1.2-3.1 l38.1-6.8c1.8-0.3,3.6,0.7,4.1,2.5C94.3,75.2,93.3,77,91.6,77.5z"/> </g> </g> <g id="trolley"/> <g id="pick_axe"/> </g>
-                  
-                  </svg>
-                  <h3>Penthouse</h3>
-                </div>
-                <div id="t-penthouse" class="t" style="display: none;">
-                    <p>
-                        Penthouses represent a prestigious segment in the real estate market, known for their exclusivity and luxury. A penthouse is typically a high-end apartment or unit situated on the top floor of a building, offering panoramic views and premium features. </p>
-                </div>
-            </div>
+       
           
-         
+<div class="category-card" onclick="toggleText('t-penthouse')">
+    <div class="penthouse-container">
+  <svg fill="pink" width="80px" height="80px" viewBox="0 0 100 100" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#af4b4b">
+
+      <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+      
+      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <g id="SVGRepo_iconCarrier"> <g id="jackhammer"/> <g id="drilling_machine"/> <g id="hammer"/> <g id="measuring_tape"/> <g id="wrench"/> <g id="saw"/> <g id="building"/> <g id="wall"/> <g id="crane"/> <g id="barrier_sign"/> <g id="concept"/> <g id="shovel"/> <g id="architecture"/> <g id="safety_helmet"/> <g id="worker"/> <g id="teamwork"/> <g id="roller_brush"/> <g id="designs"> <g> <path d="M59,28h6c0.6,0,1-0.4,1-1v-6c0-0.6-0.4-1-1-1h-6c-0.6,0-1,0.4-1,1v6C58,27.6,58.4,28,59,28z M60,22h4v4h-4V22z"/> <path d="M69,28h6c0.6,0,1-0.4,1-1v-6c0-0.6-0.4-1-1-1h-6c-0.6,0-1,0.4-1,1v6C68,27.6,68.4,28,69,28z M70,22h4v4h-4V22z"/> <path d="M59,38h6c0.6,0,1-0.4,1-1v-6c0-0.6-0.4-1-1-1h-6c-0.6,0-1,0.4-1,1v6C58,37.6,58.4,38,59,38z M60,32h4v4h-4V32z"/> <path d="M69,38h6c0.6,0,1-0.4,1-1v-6c0-0.6-0.4-1-1-1h-6c-0.6,0-1,0.4-1,1v6C68,37.6,68.4,38,69,38z M70,32h4v4h-4V32z"/> <path d="M51,33h-6c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1v-6C52,33.4,51.6,33,51,33z M50,39h-4v-4h4V39z"/> <path d="M51,43h-6c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1v-6C52,43.4,51.6,43,51,43z M50,49h-4v-4h4V49z"/> <path d="M83,41h6c0.6,0,1-0.4,1-1v-6c0-0.6-0.4-1-1-1h-6c-0.6,0-1,0.4-1,1v6C82,40.6,82.4,41,83,41z M84,35h4v4h-4V35z"/> <path d="M83,51h6c0.6,0,1-0.4,1-1v-6c0-0.6-0.4-1-1-1h-6c-0.6,0-1,0.4-1,1v6C82,50.6,82.4,51,83,51z M84,45h4v4h-4V45z"/> <path d="M95,30c0.6,0,1-0.4,1-1v-4c0-0.6-0.4-1-1-1h-1.4l-2.2-4.4c-0.2-0.3-0.5-0.6-0.9-0.6H80v-1h1c0.6,0,1-0.4,1-1v-4 c0-0.6-0.4-1-1-1h-0.7L67.5,4.1c-0.3-0.2-0.7-0.2-1,0L53.7,12H53c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1h1v1H43.4 c-0.4,0-0.7,0.2-0.9,0.6L40.4,24H39c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1h1v26h-1c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1h56 c0.6,0,1-0.4,1-1v-4c0-0.6-0.4-1-1-1h-1V30H95z M94,28h-1H80v-2h14V28z M89.9,21l1.5,3H80v-3H89.9z M80,16h-1H55h-1v-2h26V16z M67,6.2l9.5,5.8H57.5L67,6.2z M78,18v7v4v27h-5V43c0-0.6-0.4-1-1-1H62c-0.6,0-1,0.4-1,1v13h-5V29v-4v-7H78z M71,56h-8V44h8V56z M44.1,21H54v3H42.6L44.1,21z M40,26h14v2H41h-1V26z M42,30h12v26H42V30z M94,60H40v-2h1h14h7h10h7h14h1V60z M92,56H80V30h12V56z"/> <path d="M90.6,69c-1.5-2.4-4.3-3.7-7.1-3.1l-33.4,7c-0.3-0.3-0.7-0.6-1-0.9l-13.1-9c-1.1-0.7-2.4-1-3.7-0.8L18,64.8V63 c0-0.6-0.4-1-1-1H5c-0.6,0-1,0.4-1,1v32c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1v-1.8l20.5,2.7c0.2,0,0.4,0,0.6,0c0.5,0,1-0.1,1.5-0.2 l51.5-16.3c2.7-0.9,4.3-3.7,3.6-6.4C95.2,70.6,93,69,90.6,69z M83.8,67.9c1.7-0.3,3.3,0.2,4.5,1.4l-36.7,6.6 c-0.1-0.4-0.2-0.8-0.4-1.1L83.8,67.9z M16,94H6V64h10V94z M91.6,77.5L40.1,93.8c-0.4,0.1-0.9,0.2-1.3,0.1L18,91.2V66.8l14.6-2.6 c0.8-0.1,1.6,0,2.2,0.5l13.1,9c1,0.7,1.6,1.7,1.8,2.8s-0.1,2.3-0.8,3.3c-1.3,1.7-3.5,2.2-5.4,1.2l-13-6.9 c-0.5-0.3-1.1-0.1-1.4,0.4c-0.3,0.5-0.1,1.1,0.4,1.4l13,6.9c0.9,0.5,1.9,0.7,2.9,0.7c1.9,0,3.8-0.9,5-2.5c0.7-0.9,1.1-2,1.2-3.1 l38.1-6.8c1.8-0.3,3.6,0.7,4.1,2.5C94.3,75.2,93.3,77,91.6,77.5z"/> </g> </g> <g id="trolley"/> <g id="pick_axe"/> </g>
+      
+      </svg>
+      <h3>Penthouse</h3>
     </div>
-   
+    <div id="t-penthouse" class="t" style="display: none;">
+        <p>
+            Penthouses represent a prestigious segment in the real estate market, known for their exclusivity and luxury. A penthouse is typically a high-end apartment or unit situated on the top floor of a building, offering panoramic views and premium features. </p>
+    </div>
+</div>
 
 
+</div>
 
-    <br>
-    <br>
-    <br>
+<br>
+<br>
+<br>
 
     <!-- What We Do Section -->
     <section class="what-we-do">
@@ -170,7 +156,7 @@
                 <p>Our real estate solutions help clients discover their perfect home. Our team consists of experienced agents, interior designers, and legal experts. All the right people that have the knowledge and experience to guide you through the buying or renting process.</p>
                 <p>We offer personalized services with cutting-edge technology to provide virtual tours, market analysis, and investment advice to sustain long-term value.</p>
                 <p>Our team is devoted to finding you not just a house, but a place to call home.</p>
-                <a href="../Pages/blog.html" class="see-work-button">See our blog &rarr;</a>
+                <a href="./pages/" class="see-work-button">See our work &rarr;</a>
             </div>
             <div class="image-content">
                 <img src="../Assets/f5.png" alt="Team at Work">
@@ -195,8 +181,8 @@
         </div>
     </div>
 <br>
-    <!-- Top places section-->
-    <section class="place-section s-pa">
+     <!-- Top places Section -->
+     <section class="place-section s-pa">
         <div class="auto-container">
             <div class="s-title centred">
                 <h3>Top Places</h3>
@@ -209,22 +195,22 @@
                     <div class="inner-box">
                         <div class="image-carousel">
                             <div class="carousel-item">
-                                <img src="../Assets/download.jpeg" alt="Property Image 1">
+                                <img src="../Assets/f5.png" alt="Property Image 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Assets/f1.png" alt="Property Image 2">
+                                <img src="../Assets/f5.png" alt="Property Image 2">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Assets/f2.png" alt="Property Image 3">
+                                <img src="../Assets/f5.png" alt="Property Image 3">
                             </div>
                             <div class="carousel-item">
-                                  <img src="../Assets/f4.png" alt="Property Image 1">
+                                  <img src="../Assets/f5.png" alt="Property Image 1">
                               </div>
                               <div class="carousel-item">
                                   <img src="../Assets/f5.png" alt="Property Image 2">
                               </div>
                               <div class="carousel-item">
-                                  <img src="../Assets/f3.png" alt="Property Image 3">
+                                  <img src="../Assets/f5.png" alt="Property Image 3">
                               </div>
                         </div>
                         <div class="text">
@@ -243,16 +229,16 @@
                             <img src="../Assets/foto2.jpeg" alt="Property Image 2">
                         </div>
                         <div class="carousel-item">
-                            <img src="../Assets/f6.png" alt="Property Image 3">
+                            <img src="../Assets/foto2.jpeg" alt="Property Image 3">
                         </div>
                         <div class="carousel-item">
-                              <img src="../Assets/f.png" alt="Property Image 1">
+                              <img src="../Assets/foto2.jpeg" alt="Property Image 1">
                           </div>
                           <div class="carousel-item">
-                              <img src="../Assets/foto3.jpg" alt="Property Image 2">
+                              <img src="../Assets/foto2.jpeg" alt="Property Image 2">
                           </div>
                           <div class="carousel-item">
-                              <img src="../Assets/f8.png" alt="Property Image 3">
+                              <img src="../Assets/foto2.jpeg" alt="Property Image 3">
                           </div>
                       </div>
                       <div class="text">
@@ -268,19 +254,19 @@
                               <img src="../Assets/foto3.jpg" alt="Property Image 1">
                           </div>
                           <div class="carousel-item">
-                              <img src="../Assets/f1.png" alt="Property Image 2">
+                              <img src="../Assets/foto3.jpg" alt="Property Image 2">
                           </div>
                           <div class="carousel-item">
-                              <img src="../Assets/f7.png" alt="Property Image 3">
+                              <img src="../Assets/foto3.jpg" alt="Property Image 3">
                           </div>
                           <div class="carousel-item">
-                                <img src="../Assets/foto5.jpeg" alt="Property Image 1">
+                                <img src="../Assets/foto3.jpg" alt="Property Image 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Assets/f3.png" alt="Property Image 2">
+                                <img src="../Assets/foto3.jpg" alt="Property Image 2">
                             </div>
                             <div class="carousel-item">
-                                <img src="../Assets/f.png" alt="Property Image 3">
+                                <img src="../Assets/foto3.jpg" alt="Property Image 3">
                             </div>
                       </div>
                       <div class="text">
@@ -321,16 +307,16 @@
           </div>
     </div>
 
-    <!-- For Us section -->
+    <!-- For Us -->
     <section class="f-us">
         <div class="container">
-            
             <form class="f-form">
                 <input  placeholder="Write something good for us">
                 <a href="../Pages/home.html">
-                <button type="submit">Send us</button>
+                <button id="sendButton" type="submit">Send us</button>
+            </a>
             </form>
-        </a>
+       
         </div>
     </section>
 
@@ -343,7 +329,7 @@
           </div>
           <div class="reasons-container">
               <div class="reason">
-                  <div class="icon-container"><svg fill="#4ba744" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 496 496" xml:space="preserve" width="79px" height="79px" stroke="#4ba744">
+                  <div class="icon-container"><svg fill="#4ba744" version="1.1" id="Layer_1"  viewBox="0 0 496 496" xml:space="preserve" width="79px" height="79px" stroke="#4ba744">
   
                       <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                       
@@ -383,8 +369,8 @@
               </div>
           </div>
     </div>
-   <br>
-
+    <br>
+    <!-- //Added some partners -->
     <div class="partners-container">
         
         <div class="partners-heading-container">
@@ -404,101 +390,95 @@
         </div>
              
       </div>
-      
-      
-      
-
-
 
     <!-- Footer -->
     <footer class="site-footer">
        <div class="container">
               <div class="footer-logo">
                  
-                  <img src="../Assets/logo5.png" alt="Company Logo" class="footer-logo">
+                  <img src="../Assets/logo55.png" alt="Company Logo" class="footer-logo">
                   <p>Follow us</p>
                  
                   <div class="social-icons">
-                    <a href="https://www.linkedin.com/feed/"><img src="../Assets/s1.jpeg" alt="LinkedIn"></a>
-                    <a href="https://github.com/Brikenda-Zogaj/UEB20_23_Gr7"><img src="../Assets/s2.jpeg" alt="GitHub"></a>
-                    <a href="https://www.facebook.com/"><img src="../Assets/s3.jpeg" alt="Facebook"></a>
+                      <a href="https://www.linkedin.com/feed/"><img src="../Assets/s1.jpeg" alt="LinkedIn"></a>
+                      <a href="https://github.com/Brikenda-Zogaj/UEB20_23_Gr7"><img src="../Assets/s2.jpeg" alt="GitHub"></a>
+                      <a href="https://www.facebook.com/"><img src="../Assets/s3.jpeg" alt="Facebook"></a>
                   </div>
               </div>
               <div class="footer-resources">
                   <h3>Resources</h3>
                   <ul>
-                    <li><a href="../Pages/home.html">Home</a></li>
-                    <li><a href="../Pages/properties.html">Properties</a></li>
-                    <li><a href="../Pages/about.html">About us</a></li>
-                    <li><a href="../Pages/blog.html">Blog</a></li>
-                    <li><a href="../Pages/contact.html">Contact Us</a></li>
+                      <li><a href="../pages/home.html">Home</a></li>
+                      <li><a href="../pages/properties.html">Properties</a></li>
+                      <li><a href="../pages/about.html">About us</a></li>
+                      <li><a href="../pages/blog.html">Blog</a></li>
+                      <li><a href="../pages/contact.html">Contact Us</a></li>
                   </ul>
               </div>
               
               <div class="footer-lokacioni">
-                     <h3>Lokacioni</h3>
-                     <p><strong>Address:</strong> Malisheve</p>
-           
-                     <p><strong>Phone:</strong> +383 49 685 045</p>
-                     <p><strong>Phone-2:</strong>+383 49 892 592</p>
-                     <p><strong>Email:</strong><a href="mailto:emri@gmail.com" style="color:white; ">emri@gmail.com</a></p>
+                  <h3>Lokacioni</h3>
+                  <p><strong>Address:</strong> Malisheve</p>
+        
+                  <p><strong>Phone:</strong> +383 49 685 045</p>
+                  <p><strong>Phone-2:</strong>+383 49 892 592</p>
+                  <p><strong>Email:</strong><a href="mailto:emri@gmail.com" style="color:white; ">emri@gmail.com</a></p>
               </div>
           </div>
-
-
-          
     </footer>
-
     <script>
-function toggleText(contentId) {
-    // Close all open text-content divs
-    var contents = document.querySelectorAll('.t-content');
-    contents.forEach(function(content) {
-        if (content.id !== contentId) {
-            content.style.display = 'none';
+        function toggleText(contentId) {
+            // Close all open text-content divs
+            var contents = document.querySelectorAll('.t-content');
+            contents.forEach(function(content) {
+                if (content.id !== contentId) {
+                    content.style.display = 'none';
+                }
+            });
+        
+            // Toggle the one that was clicked
+            var contentDiv = document.getElementById(contentId);
+            contentDiv.style.display = (contentDiv.style.display === 'none') ? 'block' : 'none';
         }
-    });
-
-    // Toggle the one that was clicked
-    var contentDiv = document.getElementById(contentId);
-    contentDiv.style.display = (contentDiv.style.display === 'none') ? 'block' : 'none';
-}
-
-
-        </script>
-    <script>
-        function redirectToProperty() {
-            var location = document.getElementById('searchInput').value;
-            switch (location) {
-                case 'Rio De Janeiro':
-                    window.location.href = "properties.html#RioDeJaneiro";
-                    break;
-               
-                case 'Tokyo':
-                    window.location.href = "properties.html#Tokyo";
-                    break;
-                case 'London':
-                    window.location.href = "properties.html#London";
-                    break;
-               
-                    window.location.href = "properties.html"; // Default redirect if no location matches
-            }
-        }
-        $(document).ready(function() {
-        $('.place-block-one').on('click', function() {
-            // Toggle a class that zooms the card
-            $(this).toggleClass('zoomed');
-        });
-    });
-        </script>
-
-
         
         
-        
-        
-       
+                </script>
+            <script>
+                function redirectToProperty() {
+                    var location = document.getElementById('searchInput').value;
+                    switch (location) {
+                        case 'Rio De Janeiro':
+                            window.location.href = "properties.html#RioDeJaneiro";
+                            break;
+                       
+                        case 'Tokyo':
+                            window.location.href = "properties.html#Tokyo";
+                            break;
+                        case 'London':
+                            window.location.href = "properties.html#London";
+                            break;
+                       
+                            window.location.href = "properties.html"; // Default redirect if no location matches
+                    }
+                }
+                $(document).ready(function() {
+                $('.place-block-one').on('click', function() {
+                    // Toggle a class that zooms the card
+                    $(this).toggleClass('zoomed');
+                });
+            });
+                </script>
+                 <script>
+                    function toggleMenu() {
+                        var navLinks = document.getElementById("navLinks");
+                        if (navLinks.style.display === "block") {
+                            navLinks.style.display = "none";
+                        } else {
+                            navLinks.style.display = "block";
+                        }
+                    }
+                    </script>
+
     <script src="../JS/home.js"></script>
-    
 </body>
 </html>
