@@ -15,7 +15,7 @@ body {
        justify-content: space-between;
        border-radius: 40px;
        align-items: center;
-       padding: 2px 0;
+       padding: 1px 0;
    
        background-color: rgba(233, 244, 231, 0.4); 
        border-bottom: 4px solid green;
@@ -43,7 +43,7 @@ body {
        justify-content: right;
        align-items: center;
        font-weight: bold;
-       font-size:x-large;
+       font-size:medium;
        
        
    }
@@ -51,7 +51,7 @@ body {
   
    
    .nav-logo img {
-    height: 70px;
+    height: 50px;
      
    }
    
