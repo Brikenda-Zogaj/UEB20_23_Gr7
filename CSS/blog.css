@@ -135,3 +135,31 @@
     }
     
 }
+
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    font-size:50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:300px;
+    width:500px;  
+}
+.pa_stil{
+    list-style: none;
+}
+.read-more-text{
+display:none;
+}
+.read-more-text--show{
+    display:block;
+} 
+.read-more-btn{
+    color:#0984e3;
+    cursor:pointer;
+}
