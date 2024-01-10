@@ -77,3 +77,19 @@
     
     color: #61777F;
    }
+
+
+   #link-url{
+    cursor:pointer;
+    color:  #61777F;
+    font-size: medium;
+  }
+  
+  body {
+   margin: 0;
+   padding: 0;
+   display: inline;
+   font-family: 'Arial', sans-serif;
+   color: black;
+  
+  }
