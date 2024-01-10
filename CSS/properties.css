@@ -79,3 +79,22 @@
 .footer-lokacioni p {
     margin-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+    .site-footer .container {
+        flex-direction: column;
+    }
+
+    .footer-logo, .footer-resources, .footer-lokaconi {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .social-icons a {
+        margin: 0 5px;
+    }
+}
