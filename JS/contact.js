@@ -78,7 +78,26 @@ function emailIsValid(email){
 
 function tellTime(){
   var now=new Date();
+
+    
+        const day = now.getDate();
+        const month = now.getMonth() + 1;
+        const year = now.getFullYear();
+    
+        const data= `${year}-${month < 10 ? '0' + month : month}-${day < 10 ? '0' + day : day}`;
   var h=now.getHours();
   var m=now.getMinutes();
-  alert("Current time: "+h+":"+m);
+  alert("Current date: "+data+" Current time: "+h+":"+m);
+ }
+
+ //Sticky Navbar
+ window.onscroll = function() { scrollFunction() };
+ function scrollFunction() {
+   var navbar = document.getElementById("navbar");
+   var sticky = navbar.offsetTop;
+   if (window.pageYOffset > sticky) {
+     navbar.classList.add("sticky");
+   } else {
+     navbar.classList.remove("sticky");
+   }
  }
