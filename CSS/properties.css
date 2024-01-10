@@ -30,3 +30,29 @@
     margin-bottom: 10px;
     border-radius: 50px;
 }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 40px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    height: 30px; 
+    border-radius: 50px;
+}
+
+.footer-resources, .footer-lokacioni {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.footer-resources h3, .footer-lokacioni h3 {
+    margin-bottom: 15px;
+}
