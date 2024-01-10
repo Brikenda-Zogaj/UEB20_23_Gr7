@@ -1,23 +1,47 @@
-#butoni{
-  background-color: mediumseagreen;
-border-color: mediumseagreen;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #ececec;
 }
 
-#loginForm {
-      max-width: 700px; /* Limit form width */
-      margin: 0 auto; /* Center the form horizontally */
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
- 
-    #div1 {
-      width: 400px;
-      height: 100px;
-      padding: 10px;
-      border: 1px solid #aaaaaa;
-    }
-    
+
+/*--------- Login container --------*/
+
+.box-area{
+  width: 930px;
+}
+
+
+/*---------- Right box ----------*/
+
+.right-box{
+  padding: 40px 30px 40px 40px;
+}
+
+
+/*--------- Custom Placeholder ---------*/
+
+::placeholder{
+  font-size: 16px;
+}
+
+
+/*--------- For small screens ---------*/
+
+@media only screen and (max-width: 768px){
+  .box-area{
+    margin: 0 10px;
+  }
+  .left-box{
+    height: 100px;
+    overflow: hidden;
+  }
+  .right-box{
+    padding: 20px;
+  }
+}
+
 
 /* Styles for checkbox container */
 .checkbox-container {
