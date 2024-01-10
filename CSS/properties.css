@@ -1,3 +1,117 @@
+body{
+    background-image:url('../Assets/nos.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-origin:inherit;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: black;
+  
+   
+       
+       /* Navbar */
+       .navbar {
+           display: flex;
+           justify-content: space-between;
+          border-radius: 40px;
+           align-items: center;
+           padding: 2px 0;
+       
+           background-color: rgba(233, 244, 231, 0.4); 
+           border-bottom: 4px solid green;
+       }
+       .sticky {
+           position: fixed;
+           top: 0;
+           width: 100%;
+           z-index: 1000; 
+         }
+         
+       
+       .nav-links {
+           display: flex;
+           align-items: center; 
+           
+           justify-content: space-between;
+       }
+       
+        .nav-links.right {
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           display:inline;
+           justify-content: right;
+           align-items: center;
+           font-weight: bold;
+           font-size:x-large;
+           
+           
+       }
+       
+       .nav-logo img {
+        height: 70px; 
+    }
+       
+       .nav-links a {
+           margin: 0 10px;
+           text-decoration: none;
+           color: #181313;
+            
+       }
+       .a, button {
+        padding: 0px 10px;
+        border: none;
+        font-weight: bold;
+        font-size: large;
+        background-color: #45a049;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+       
+       
+      /* Responsive navbar */
+      @media (max-width: 768px) {
+        .nav-links {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    
+        .nav-links a {
+            display: block;
+            padding: 10px;
+        }
+    }
+       
+       .nav-links a:hover {
+           
+           
+           color: green;
+       }
+
+
+
+
+  }
+  .card {
+      margin-bottom: 20px;
+    }
+    #toggleButton {
+      padding: 10px 20px; 
+      font-size: 16px;
+      
+      border-radius: 5px;
+      background-color:#28a745; 
+      color: white; 
+      border: none; 
+    }
+    
+    /* Style the button when hovered */
+    #toggleButton:hover {
+      background-color:rgb(153, 217, 153); 
+      color: white; 
+    }
 /* footer properties */
 .site-footer {
     background-color: rgba(46, 148, 62, 0.472);
@@ -78,4 +192,23 @@
 
 .footer-lokacioni p {
     margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .site-footer .container {
+        flex-direction: column;
+    }
+
+    .footer-logo, .footer-resources, .footer-lokaconi {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .social-icons a {
+        margin: 0 5px;
+    }
 }
