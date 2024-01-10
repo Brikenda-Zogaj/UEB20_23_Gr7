@@ -43,7 +43,10 @@ body {
        justify-content: right;
        align-items: center;
        font-weight: bold;
+
        font-size:x-large;
+       font-size: medium;
+
        
        
    }
@@ -435,7 +438,7 @@ body {
 }
 
 .carousel-item {
-    width: 16.6666%; /* Update to reflect double the images */
+    width: 13.6666%; /* Update to reflect double the images */
     flex-shrink: 0;
 }
 

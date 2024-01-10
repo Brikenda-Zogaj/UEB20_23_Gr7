@@ -1,37 +1,51 @@
 class FormHandler {
-  //construktor per manip me array
-    constructor() {
+  constructor() {
       this.numbers = [1, 2, 3, 4, 5];
       this.initializeEvents();
-    }
-  // funks per submit te loginform
-    initializeEvents() {
-      $(document).ready(() => {
-        $('#loginForm').submit((event) => {
-          event.preventDefault(); 
-          this.handleLoginForm();
-        });
-      });
-    }
-  
-    handleLoginForm() {
-      // Get the value of the username input
-      let usernameValue = $('input[name="username"]').val();
-      console.log('Username:', usernameValue);
-  
-      // Set a new value to the password input
-      $('input[name="password"]').val('newPassword');
-  
-      // Add a class to the username input
-      $('input[name="username"]').addClass('new-class');
-  
-      // Remove a class from the password input
-      $('input[name="password"]').removeClass('form-control');
-  
-      window.location.href = '../Pages/home.html'; 
-    }
-  
+  }
 
+  initializeEvents() {
+      $(document).ready(() => {
+          $('#loginForm').submit((event) => {
+              event.preventDefault(); 
+              this.handleLoginForm();
+          });
+      });
+  }
+
+  handleLoginForm() {
+    // Get the value of the username and password inputs
+    let emailValue = $('input[name="username"]').val();
+    let passwordValue = $('input[name="password"]').val();
+
+    // Validate email
+    if (!this.validateEmail(emailValue)) {
+        alert("Please enter a valid email address.");
+        return; // Stop the function if the email is not valid
+    }
+
+    // Validate password
+    if (!this.validatePassword(passwordValue)) {
+        alert("Password must be at least 8 characters long and start with an uppercase letter.");
+        return; // Stop the function if the password is not valid
+    }
+
+    console.log('Email:', emailValue);
+    console.log('Password:', passwordValue);
+
+
+    window.location.href = '../Pages/home.html'; 
+}
+
+validateEmail(email) {
+    const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return re.test(String(email).toLowerCase());
+}
+
+validatePassword(password) {
+    return password.length >= 8 && password.charAt(0) === password.charAt(0).toUpperCase();
+}
+  
 
 
     manipulateNumbers() {

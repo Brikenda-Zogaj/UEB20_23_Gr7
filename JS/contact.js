@@ -11,9 +11,11 @@ const nmessage=document.querySelector("#message");
 const success=document.querySelector("#success");
 const errorNodes=document.querySelectorAll(".error");
 
+document.getElementById('formId').addEventListener('submit', validateForm);
 // Validate data
-function validateForm() {
+function validateForm(event) {
     try {
+      event.preventDefault();
       clearMessage();
   
       let errorFlag = false;
@@ -71,3 +73,12 @@ function emailIsValid(email){
     let pattern=/\S+@\S+\.\S+/;
     return pattern.test(email);
 }
+
+
+
+function tellTime(){
+  var now=new Date();
+  var h=now.getHours();
+  var m=now.getMinutes();
+  alert("Current time: "+h+":"+m);
+ }

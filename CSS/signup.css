@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.card {
+  border: none;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+
+h2.card-title {
+  color: #333; 
+  font-weight: 600;
+  margin-bottom: 1.5rem; 
+}
+
+
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ced4da; 
+  padding: 0.75rem 1rem; 
+}
+
+/* Style for the primary button */
+.btn-primary {
+  background-color: #0056b3; 
+  border: none;
+  border-radius: 5px; 
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-primary:hover {
+  background-color: #004494; 
+}
+
+/* Link styling */
+a {
+  color: #0056b3; 
+  text-decoration: none; 
+}
+
+a:hover {
+  text-decoration: underline; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .card-body {
+      padding: 1rem; 
+  }
+}
