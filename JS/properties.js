@@ -78,3 +78,12 @@ function validate() {
     
   }
 }
+
+
+const searchForm = document.querySelector('.form-inline');
+     
+searchForm.addEventListener('submit', function(event) {
+  event.preventDefault(); 
+
+  validate(); // Thirrja e funksionit të validimit
+});
