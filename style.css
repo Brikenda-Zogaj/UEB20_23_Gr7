@@ -19,7 +19,7 @@ body {
        padding: 2px 0;
    
        background-color: rgba(233, 244, 231, 0.4); 
-       border-bottom: 4px solid green;
+       border-bottom: 4px solid #61777f;
    }
    .sticky {
        position: fixed;
@@ -44,23 +44,24 @@ body {
        justify-content: right;
        align-items: center;
        font-weight: bold;
-
-       font-size:x-large;
-       font-size: medium;
+       font-size:20px;
+       
 
        
        
    }
-   
-  
-   
+   .nav-links.right :hover{
+    color: darkgray;
+    font-size: 22px;
+   }
    .nav-logo img {
-    height: 70px;
+    height: 65px;
+    margin-left: 3px;
      
    }
    
    .nav-links a {
-       margin: 0 10px;
+       margin: 0 15px;
        text-decoration: none;
        color: #181313;
         
@@ -71,7 +72,7 @@ body {
  font-size: large;
  font-weight: bold;
  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- background-color: #45a049;
+ background-color: #61777f;
  border-radius: 15px;
  cursor: pointer;
 }
@@ -178,12 +179,12 @@ body {
        font-weight: bold;
        font-size:xx-large;
        left: 50%;
-       text-decoration: #00b894;
-       font-family: Georgia, 'Times New Roman', Times, serif;
+       text-decoration: #707678;
+       font-family: 'Times New Roman', Times, serif;
        transform: translate(-50%, -50%);
        color:#2f1b1b;
-       text-shadow: 4px 4px 4px rgba(78, 130, 69, 0.4);
-       text-shadow: h-shadow v-shadow blur-radius color red;
+       text-shadow: 4px 4px 4px rgba(103, 109, 101, 0.61);
+       text-shadow: h-shadow v-shadow blur-radius color rgb(128, 121, 121);
        text-align: center;
    }
   
@@ -217,8 +218,8 @@ body {
      }
      
      .search-section button {
-       background-color: #4CAF50; 
-       color: white;
+       background-color: #61777f; 
+       color: black;
        border: none;
        padding: 10px;
        border-radius: 0 5px 5px 0; 
@@ -226,7 +227,7 @@ body {
      }
      
      .search-section button:hover {
-       background-color: #45a049;
+       background-color: darkgrey;
      }
      
     
@@ -238,7 +239,7 @@ body {
        display: flex;
        justify-content: space-around;
        align-items: center;
-       border-color: #45a049;
+       border-color:#61777f;
       
       
      }
@@ -438,116 +439,108 @@ body {
     .video-description {
         font-size: smaller; 
     }
+    .video .see-work-button{
+        color: black;
+    }
 }
    
    
   
-   
-     
-   
-   
-   
-     
-   
    
     /* Properties */
    
-    .s-pa {
-        padding: 20px;
+    .featured-properties {
+        padding: 40px 0;
+        border-radius: 20px;
+        background-color: #61777f;
     }
-
-    .auto-container {
-        max-width: 1200px;
+    
+    .featured-properties .container {
+        width: 80%;
         margin: 0 auto;
-        padding: 15px;
     }
-
-    .centred {
+    
+    .featured-properties h2 {
         text-align: center;
-    }
-
-    .s-title  {
         margin-bottom: 30px;
     }
-
-    .s-title h3,h2 {
-       
-        color:rgba(49, 137, 53, 1);
-      
+    
+    .property-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-
-   
-
-    .s-title p {
-        color: #262927;
+    
+    .property-item {
+        width: 30%;
+        margin-bottom: 20px;
+        background-color: rgba(169, 169, 169, 0.428);
+        box-shadow: 0 2px 5px rgba(166, 154, 154, 0.1);
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 20px;
     }
-
-    .items-container {
-    display: flex; /* Or 'grid' if you prefer, but remove the other layout's properties */
-    justify-content: space-between; /* This will add space between your items */
-  gap:30px; /* Allows items to wrap to the next line */
-
-}
-
-    .place-block-one {
-        position: relative;
-        overflow: hidden;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px white;
-        transition: transform 0.3s ease-in-out;
-    }
-
-   
-    .place-block-one.zoomed {
-   
-   transition: transform 0.3s ease-in-out; /* Smooth transition for the zoom effect */
-   z-index: 10; /* Make sure the zoomed card is above the others */
-}
-    .place-block-one:hover,
-    .place-block-one.zoomed {
-     transform: scale(1.2);
-  
-}
-
-    .image-carousel {
-    display: flex;
-    width: 600%; /* Update to reflect double the images */
-    animation: scroll 30s infinite linear;
-}
-
-.carousel-item {
-    width: 13.6666%; /* Update to reflect double the images */
-    flex-shrink: 0;
-}
-
-    .carousel-item img {
+    
+    .property-item img {
         width: 100%;
-        display: block;
-        object-fit: cover;
+        height: 60%;
+        border-radius: 20px;
     }
-
-  
-
-
-
-    .text {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background: rgba(11, 11, 11, 0.9);
-        color: #fff;
+    
+    .property-info {
         padding: 15px;
         text-align: center;
     }
+    .btn {
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+        transition: all 0.3s ease;
+        font-weight: bold;
+    }
+    
+    .btn-primary {
+        background-color: #61777f;
+        color: black;
+        border: none;
+    }
+    
+    
+    .btn-secondary {
+        background-color: rgba(233, 244, 231, 0.4);
+        color:black;
+        border: 1px solid black;
+    }
+    
+    .btn-secondary:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    
+    
+    @media (max-width: 768px) {
+        .property-item {
+            width: 45%;
+        }
+    
+      
+    }
+    
+    @media (max-width: 480px) {
+        .property-item {
+            width: 100%;
+        }
+    }
+     
+   
+   
+   
+     
 
-    @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* Scroll to halfway point (end of first sequence) */
-}
-   
-   
-   
    
    
    /* Testimonial */
@@ -578,7 +571,7 @@ body {
    
    .testimonial-author {
        font-weight: bold;
-       color: #00b894;
+       color: #61777f;
    }
    
    .testimonial-arrow {
@@ -600,8 +593,8 @@ body {
    
    /* For Us */
    .f-us .container {
-       background-color:rgba(80, 216, 89, 0.1) ;
-       color:green;
+       background-color:#61777f85 ;
+       color:darkgrey;
        text-align: center;
        padding: 40px 20px;
    }
@@ -631,7 +624,7 @@ body {
    /* Reason */
    .reasons-section {
        border-radius: 50px;
-       background-color:rgba(67, 175, 55, 0.2); 
+       background-color:#61777ffb; 
        color:black; 
        border: 2px solid black;
        margin: 0 200px;
@@ -648,7 +641,7 @@ body {
    
    
    .reasons-header h2 {
-       color: green; 
+       color: black; 
    }
    
    .reasons-header h1 {
@@ -720,7 +713,7 @@ body {
       .partners-container {
         display: flex;
         background-image: url('../Assets/13-40-01-58_512.gif');
-        background-color: rgba(112, 182, 102, 0.3);
+        background-color: #61777fc0;
         background-size: cover;
       
         align-items: center;
@@ -765,7 +758,7 @@ body {
    
    /* Footer */
    .site-footer {
-       background-color: rgba(46, 148, 62, 0.472);
+       background-color: #61777f;
        color: #fff;
        padding: 40px 0;
        display: flex;
