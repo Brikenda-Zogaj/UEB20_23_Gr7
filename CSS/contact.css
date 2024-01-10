@@ -33,14 +33,14 @@
     justify-content: right;
     align-items: center;
      font-weight: bold; 
-    font-size:x-large;
+    font-size:medium;
     
     
 }
 
 
 .nav-logo img {
-  height: 70px;
+  height: 50px;
 
 }
 
@@ -79,7 +79,7 @@
 }
 
 .nav-links a:hover {
-    text-shadow:black ;
+  
     
     color: green;
 }
