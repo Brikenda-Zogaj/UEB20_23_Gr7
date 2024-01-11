@@ -21,7 +21,7 @@ body{
            padding: 2px 0;
        
            background-color: rgba(233, 244, 231, 0.4); 
-           border-bottom: 4px solid green;
+           border-bottom: 4px solid #61777fa3;
        }
        .sticky {
            position: fixed;
@@ -64,7 +64,7 @@ body{
         border: none;
         font-weight: bold;
         font-size: large;
-        background-color: #45a049;
+        background-color: darkgrey;
         border-radius: 15px;
         cursor: pointer;
     }
@@ -87,7 +87,7 @@ body{
        .nav-links a:hover {
            
            
-           color: green;
+           color: #61777f70;
        }
 
 
@@ -102,19 +102,19 @@ body{
       font-size: 16px;
       
       border-radius: 5px;
-      background-color:#28a745; 
+      background-color:#737b7dad; 
       color: white; 
       border: none; 
     }
     
     /* Style the button when hovered */
     #toggleButton:hover {
-      background-color:rgb(153, 217, 153); 
+      background-color:rgba(97, 98, 97, 0.688); 
       color: white; 
     }
 /* footer properties */
 .site-footer {
-    background-color: rgba(46, 148, 62, 0.472);
+    background-color: rgba(55, 57, 56, 0.472);
     color: #fff;
     padding: 40px 0;
     display: flex;
@@ -142,7 +142,7 @@ body{
 .footer-logo {
     max-width: 100px;
     margin-bottom: 10px;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 .social-icons {
