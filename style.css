@@ -5,7 +5,7 @@ body {
        padding: 0;
        font-family: 'Arial', sans-serif;
        color: black;
-       background-color: rgb(251, 249, 246);
+       background-color: #c9d7ddb1;;
        background-image: none;
    }
  
@@ -324,6 +324,8 @@ body {
        background-color: #61777f; 
        padding: 80px 120px; 
        border-radius: 20px;
+       border: 2px solid #000; 
+
    }
    
    .container {
@@ -400,6 +402,7 @@ body {
        align-items: center; 
        justify-content: center; 
        gap: 20px; 
+       
    }
    
    
@@ -410,6 +413,7 @@ body {
        width: 50%;
        border-radius: 30px;
        margin: 0 auto;
+      
    }
    
    
@@ -457,11 +461,13 @@ body {
         padding: 40px 0;
         border-radius: 20px;
         background-color: #61777f;
+        border: 2px solid #000; 
     }
     
     .featured-properties .container {
         width: 80%;
         margin: 0 auto;
+       
     }
     
     .featured-properties h2 {
@@ -483,12 +489,14 @@ body {
         margin-left: 20px;
         margin-right: 20px;
         border-radius: 20px;
+        border: 2px solid #000; 
     }
     
     .property-item img {
         width: 100%;
         height: 60%;
         border-radius: 20px;
+        border-bottom: 1px solid black; 
     }
     
     .property-info {
