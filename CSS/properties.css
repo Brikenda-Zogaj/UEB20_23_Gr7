@@ -109,13 +109,15 @@ body{
       border: none; 
     }
 
-    
+
     /* Style the button when hovered */
     #toggleButton:hover {
       background-color:rgba(97, 98, 97, 0.688); 
       color: white; 
       
     }
+
+
 /* footer properties */
 .site-footer {
     margin-top: 20px;
