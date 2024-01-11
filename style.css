@@ -407,6 +407,7 @@ body {
        display: inline-block;
        cursor: pointer;
        width: 50%;
+       border-radius: 30px;
        margin: 0 auto;
    }
    
@@ -595,14 +596,17 @@ body {
    
    /* For Us */
    .f-us .container {
-       background-color:#61777f85 ;
+      justify-content: center;
        color:darkgrey;
+   
        text-align: center;
-       padding: 40px 20px;
+      
    }
    
    .f-form input {
        padding: 10px;
+     
+       justify-content: center;
        margin-right: 10px;
        border: none;
        outline: none;
@@ -610,7 +614,8 @@ body {
    
    .f-form button {
        padding: 10px 20px;
-       border: none;
+       border: 2px solid black;
+   
        cursor: pointer;
    }
    .emoji{
