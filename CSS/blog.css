@@ -51,7 +51,7 @@
      border: none;
      font-weight: bold;
      font-size: large;
-     background-color: rgb(175, 192, 215);
+     background-color: #61777F;
      cursor: pointer;
    } 
    
@@ -172,7 +172,7 @@ table {
 td{
     padding: 15px;
     border: 1px solid #ccc;
-    background: radial-gradient(rgb(162, 238, 182), white);
+    background: radial-gradient(#61777fb1, white);
 
 }
 th, td {

@@ -111,7 +111,7 @@ background-color: #2196F3;
   padding: 2px 0;
 
   background-color: rgba(233, 244, 231, 0.4); 
-  border-bottom: 4px solid green;
+  border-bottom: 4px solid #61777f9e;
 }
 .sticky {
   position: fixed;
@@ -134,7 +134,7 @@ background-color: #2196F3;
   justify-content: right;
   align-items: center;
   font-weight: bold;
-  font-size:medium;
+  font-size:25px;
   
   
 }
@@ -154,7 +154,7 @@ height: 50px;
   border: none;
   font-weight: bold;
   font-size: large;
-  background-color: #45a049;
+  background-color: #61777f;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -273,5 +273,5 @@ height: 50px;
 .nav-links a:hover {
  
   
-  color: green;
+  color: #61777fbc;
 }
