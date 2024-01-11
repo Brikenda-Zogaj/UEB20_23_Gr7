@@ -82,6 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
          
          showTestimonial(currentIndex);
      });
+     
      document.getElementById('sendButton').addEventListener('click', function(e) {
       e.preventDefault(); // Prevent the form from submitting for demonstration purposes
     
