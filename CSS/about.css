@@ -131,13 +131,13 @@
 
 .about-text ul li:before {
   content: '• ';
-  color: #28a745;
+  color: #61777f;
   font-weight: bold;
   font-size: 1.5rem;
 }
 
 .contact-btn {
-  background-color: #28a745;
+  background-color: #61777f;
   color: #fff;
   border: none;
   padding: 15px 30px;
@@ -149,7 +149,7 @@
 }
 
 .contact-btn:hover {
-  background-color: #218838;
+  background-color: #61777f;
 }
 
 .teams-container {
@@ -196,7 +196,7 @@
 }
 
 .site-footer {
-  background-color: rgba(46, 148, 62, 0.472);
+  background-color: #61777f;
   color: #fff;
   padding: 40px 0;
   display: flex;
