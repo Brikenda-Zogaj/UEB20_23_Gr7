@@ -37,7 +37,7 @@ class FormHandler {
     console.log('Password:', passwordValue);
 
 
-    window.location.href = '../Pages/home.html'; 
+    window.location.href = '/home.html'; 
 }
 
 validateEmail(email) {
