@@ -26,6 +26,17 @@ body{
   font-size: 16px;
 }
 
+.btn-primary.btn-lg {
+  background-color: #61777f; /* New background color */
+  border-color: #61777f; /* Border color to match the background */
+  color: #fff; /* Text color for better visibility */
+}
+
+.btn-primary.btn-lg:hover,
+.btn-primary.btn-lg:focus {
+  background-color: #52696e; /* Darker shade for hover and focus */
+  border-color: #52696e;
+}
 
 /*--------- For small screens ---------*/
 
