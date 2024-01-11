@@ -15,9 +15,8 @@ document.getElementById('formId').addEventListener('submit', validateForm);
 // Validate data
 function validateForm(event) {
     try {
-      event.preventDefault();
       clearMessage();
-  
+      event.preventDefault();
       let errorFlag = false;
   
       if (nameInput.value.toString().trim().length === 0) {
@@ -49,10 +48,11 @@ function validateForm(event) {
         // Show an alert before submitting the form
         if (confirm("Are you sure you want to submit this form?")) {  //warning
           success.innerText = "Message sent successfully!";
-          // Perform form submission here
-          document.getElementById('formId').submit();
+          window.location.href = '../Pages/response.html';
+        
         } else {
           success.innerText = "Form submission cancelled!";
+         
         }
       }
     } catch (error) {
