@@ -259,7 +259,7 @@ body {
      
      .category-card.highlighted {
    
-       background:  #c5d5c6; 
+       background: #61777f7b; 
        color: #ffffff;
      }
    
@@ -319,8 +319,9 @@ body {
    .what-we-do {
        display: flex;
        align-items: center;
-       background-color: #eef4f7; 
+       background-color: #61777f; 
        padding: 80px 120px; 
+       border-radius: 20px;
    }
    
    .container {
@@ -336,12 +337,12 @@ body {
    }
    
    .text-content h2 {
-       color: #2c3e50; 
+       color: white; 
        margin-bottom: 24px;
    }
    
    .text-content p {
-       color: #6c7a89;
+       color: white;
        line-height: 1.6;
        margin-bottom: 20px;
    }
@@ -368,7 +369,7 @@ body {
    .image-content img {
        width: 100%;
        height: auto;
-       border-radius: 8px; 
+       border-radius: 20px; 
    }
    
    @media  screen and (max-width: 992px) {
