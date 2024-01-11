@@ -119,7 +119,7 @@
 <div class="checkbox-container">
   <u> <p>Favorite Destination :</p></u>
    <form onsubmit="return validateForm()">
-     <p>Using checkbox</p>
+     <p id="demo">Using checkbox: </p>
      <label for="item1">Beach
        <input type="checkbox" id="item1" name="item1" value="value1">
        <label for="item1"></label>
@@ -153,12 +153,20 @@
      
      <button type="submit">Submit</button>
    </form>
+
+
+   
  </div>
  
  
    </div>
  
  
+  
+   <script>
+    let text = document.getElementById("demo").innerHTML; 
+    document.getElementById("demo").innerHTML = text.replace("Using", "Perdore");
+    </script>
  
    
    <script src="../Js/login.js"></script>

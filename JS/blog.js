@@ -1,4 +1,4 @@
-
+//jquery callback funksion sepse onclick e thirr veten 
 $(document).ready(function() {
     $('.read-more-btn').on('click', function() {  
         var $readMoreText = $(this).prev('.text').find('.read-more-text');
@@ -47,42 +47,44 @@ document.getElementById("ndryshoTekstin").onclick = function() {
 function ndryshoNgjyren() {
     document.body.style.backgroundColor = " rgba(187, 187, 193,0.2)";
 }
+
 const cards = document.querySelectorAll('.card');
 cards.forEach(card => {
     card.classList.add('new-class'); //Add class
 });
-function HTMLContent(content) {
-    this.content = content;
+
+// function HTMLContent(content) {
+//     this.content = content;
   
-    this.getParagraph = function () {
-      const matchResult = this.content.match(/<p>([\s\S]+)<\/p>/);
-      return matchResult ? matchResult[1] : null;
-    };
+//     this.getParagraph = function () {
+//       const matchResult = this.content.match(/<p>([\s\S]+)<\/p>/);
+//       return matchResult ? matchResult[1] : null;
+//     };
   
-    this.modifyParagraph = function (find, replaceWith) {
-      const paragraph = this.getParagraph();
-      if (paragraph) {
-        return paragraph.replace(new RegExp(find, 'g'), replaceWith);
-      } else {
-        return 'Paragraph not found or HTML structure differs.';
-      }
-    };
-  }
- const htmlContent = `<div class="card tekst">
+//     this.modifyParagraph = function (find, replaceWith) {
+//       const paragraph = this.getParagraph();
+//       if (paragraph) {
+//         return paragraph.replace(new RegExp(find, 'g'), replaceWith);
+//       } else {
+//         return 'Paragraph not found or HTML structure differs.';
+//       }
+//     };
+//   }
+//  const htmlContent = `<div class="card tekst">
    
-  <p>Houses, the sanctuary we return to after a long day, hold stories within their walls. They stand as more than just physical structures; they encapsulate memories, emotions, and a sense of belonging.
-  Within these walls, we find comfort, safety, and the freedom to express our truest selves.</p>
+//   <p>Houses, the sanctuary we return to after a long day, hold stories within their walls. They stand as more than just physical structures; they encapsulate memories, emotions, and a sense of belonging.
+//   Within these walls, we find comfort, safety, and the freedom to express our truest selves.</p>
   
-  </div>`;
+//   </div>`;
   
-  const myHTMLContent = new HTMLContent(htmlContent);
+//   const myHTMLContent = new HTMLContent(htmlContent);
   
-  // Get the paragraph content
-  const paragraph = myHTMLContent.getParagraph();
-  console.log('Original paragraph:', paragraph);
+//   // Get the paragraph content
+//   const paragraph = myHTMLContent.getParagraph();
+//   console.log('Original paragraph:', paragraph);
   
-  // Modify the paragraph content
-  const modifiedParagraph = myHTMLContent.modifyParagraph('long', 'tiring');
-  console.log('Modified paragraph:', modifiedParagraph);
+//   // Modify the paragraph content
+//   const modifiedParagraph = myHTMLContent.modifyParagraph('long', 'tiring');
+//   console.log('Modified paragraph:', modifiedParagraph);
   
   
