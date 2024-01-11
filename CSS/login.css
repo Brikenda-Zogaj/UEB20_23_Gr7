@@ -109,6 +109,8 @@ background-color: #2196F3;
  border-radius: 40px;
   align-items: center;
   padding: 2px 0;
+  margin-left: 5px;
+  margin-right: 5px;
 
   background-color: rgba(233, 244, 231, 0.4); 
   border-bottom: 4px solid #61777f9e;

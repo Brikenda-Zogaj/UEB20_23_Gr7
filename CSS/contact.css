@@ -58,7 +58,8 @@
     font-size: 20px;
     background-color: #61777f;
     border-radius: 15px;
-    cursor: pointer;
+    cursor: pointer; 
+    margin-top: 5px;
 }
 
 
