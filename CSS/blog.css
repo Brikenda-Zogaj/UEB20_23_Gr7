@@ -122,3 +122,67 @@
   height: 30px;
   border-radius: 50px;
 }
+@media only screen and (max-width: 1024px) {
+    
+    body {
+        font-size: 14px;
+       
+    }
+    .music{
+        position: initial;
+        left:0;
+        right:0;
+    }
+    
+}
+
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    font-size:50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:300px;
+    width:500px;  
+}
+.pa_stil{
+    list-style: none;
+}
+.read-more-text{
+display:none;
+}
+.read-more-text--show{
+    display:block;
+} 
+.read-more-btn{
+    color:#0984e3;
+    cursor:pointer;
+}
+table {
+    width: 100%;
+    border-collapse: separate;
+    margin-bottom: 20px;
+    border-spacing: 3px;
+}
+td{
+    padding: 15px;
+    border: 1px solid #ccc;
+    background: radial-gradient(rgb(162, 238, 182), white);
+
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);;
+}
+th {
+    background-color:#ccc;
+    background: linear-gradient(to right, #ccc,white);
+}
+

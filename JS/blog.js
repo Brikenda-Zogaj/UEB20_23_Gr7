@@ -33,3 +33,7 @@ document.getElementById("ndryshoTekstin").onclick = function() {
 function ndryshoNgjyren() {
     document.body.style.backgroundColor = " rgba(187, 187, 193,0.2)";
 }
+const cards = document.querySelectorAll('.card');
+cards.forEach(card => {
+    card.classList.add('new-class'); //Add class
+});
