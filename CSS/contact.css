@@ -114,7 +114,7 @@ border-radius: 20px;
 #send_but{
     background-color:#b7b9ba;
     border: 2px black;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 #send_but:hover{
     background-color:whitesmoke;
@@ -125,7 +125,7 @@ border-radius: 20px;
     height:52px;
     background-color: #fff;
     font-size: 14px;
-    border-radius: 2px ;
+    border-radius: 10px ;
     box-shadow: none !important;
     border: 1px solid #555;
 }
