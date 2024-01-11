@@ -161,6 +161,48 @@ width: 90%;
 max-width:200px;
 background-color: mediumseagreen;
 }
+/* faq css*/
+.faq-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.faq-caption {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #005600; /* Dark green text color */
+    margin-bottom: 20px;
+}
+
+.faq-q {
+    cursor: pointer;
+    padding: 15px;
+    background-color: #c7ecc7; /* Light green button */
+    border: 1px solid #a0d8a0; /* Slightly darker green border */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #005600; /* Dark green text color */
+    font-weight: bold;
+}
+
+.faq-a {
+    display: none;
+    padding: 15px;
+    border: 1px solid #a0d8a0;
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+    color: #333; /* Dark text color */
+}
+
+
+
+
 
 /* footer properties */
 .site-footer {
