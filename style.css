@@ -605,11 +605,11 @@ body {
    
    .f-form input {
        padding: 10px;
-     
+     border-radius: 10px;
        justify-content: center;
        margin-right: 10px;
-       border: none;
-       outline: none;
+       border: 2px solid black;
+      
    }
    
    .f-form button {
