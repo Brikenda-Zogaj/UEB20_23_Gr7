@@ -17,7 +17,7 @@ Ky website eshte zhvilluar nga studentet e vitit te dyte FIEK, drejtimi Inxhinie
 
 ## Qasja ne website 
  
-<!--Pritet te kryhet hostimi-->
+https://metropolrealestate.netlify.app/
 
 ## Burimet e perdorura
 
