@@ -37,7 +37,7 @@ class FormHandler {
     console.log('Password:', passwordValue);
 
 
-    window.location.href = '../Pages/home.html'; 
+    window.location.href = '/home.html'; 
 }
 
 validateEmail(email) {
@@ -201,3 +201,14 @@ function validateForm() {
 
   return true; 
 }
+ // Sticky Navbar
+ window.onscroll = function() { scrollFunction() };
+ function scrollFunction() {
+   var navbar = document.getElementById("navbar");
+   var sticky = navbar.offsetTop;
+   if (window.pageYOffset >= sticky) {
+     navbar.classList.add("sticky");
+   } else {
+     navbar.classList.remove("sticky");
+   }
+ }
