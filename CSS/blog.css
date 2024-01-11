@@ -96,12 +96,17 @@
 
   .card {
     border: 2px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 20px;
+    padding: 0px;
     margin-bottom: 20px;
     background-color:#ffffff;
     box-shadow: #ccc;
 }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+  }
 #ndryshoTekstin{
     cursor: pointer;
  
